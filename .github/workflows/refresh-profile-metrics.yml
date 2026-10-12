@@ -6,7 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # The built-in token can write only to this profile repository.
+  # Cross-repository access is provided separately by the read-only secret.
+  contents: write
 
 concurrency:
   group: profile-metrics
@@ -21,25 +23,25 @@ jobs:
         uses: actions/github-script@v7
         env:
           PROFILE_READ_TOKEN: ${{ secrets.PROFILE_READ_TOKEN }}
-          PROFILE_WRITE_TOKEN: ${{ secrets.PROFILE_WRITE_TOKEN }}
         with:
-          github-token: ${{ secrets.PROFILE_WRITE_TOKEN }}
+          github-token: ${{ github.token }}
           script: |
             const { getOctokit } = require("@actions/github");
             const readToken = process.env.PROFILE_READ_TOKEN;
-            const writeToken = process.env.PROFILE_WRITE_TOKEN;
-            if (!readToken || !writeToken) {
-              core.setFailed("Add PROFILE_READ_TOKEN and PROFILE_WRITE_TOKEN repository secrets. See the README setup notes.");
+            if (!readToken) {
+              core.setFailed("Missing PROFILE_READ_TOKEN. Add the repository secret described in METRICS_SETUP.md.");
               return;
             }
 
             const read = getOctokit(readToken);
-            const write = getOctokit(writeToken);
+            // github-script client uses the short-lived, repository-scoped GITHUB_TOKEN.
+            const write = github;
             const owner = "janarthananRaja";
             const profileRepo = "janarthananRaja";
             const now = new Date();
             const since = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
             const iso = d => d.toISOString().slice(0, 10);
+            const escapeHtml = value => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\x27/g, "&#39;");
 
             const repos = await read.paginate(read.rest.repos.listForAuthenticatedUser, {
               per_page: 100,
@@ -65,6 +67,7 @@ jobs:
 
             for (const repo of owned) {
               if (!repo.default_branch) continue;
+              if (repo.size === 0) continue; // Empty repositories have no commit history.
               let commits = [];
               try {
                 commits = await read.paginate(read.rest.repos.listCommits, {
@@ -75,8 +78,9 @@ jobs:
                   per_page: 100
                 });
               } catch (e) {
-                core.warning(`Skipped commit history for a repository unavailable to the read token (HTTP ${e.status || "unknown"}).`);
-                continue;
+                // Fail closed: never publish misleading partial totals when access is missing.
+                core.setFailed("Could not read commit history for every owned repository. Check PROFILE_READ_TOKEN repository access and Contents: read permission. No metrics were published.");
+                return;
               }
 
               totalCommits += commits.length;
@@ -112,7 +116,7 @@ jobs:
             let recentHtml = "";
             if (publicRecent.length) {
               recentHtml = publicRecent.slice(0, 5).map(c =>
-                `<tr><td><a href="${c.url}">${c.message.replace(/&/g, "&amp;")}</a></td><td><a href="https://github.com/${owner}/${c.repo}">${c.repo}</a></td><td>${iso(new Date(c.date))}</td></tr>`
+                `<tr><td><a href="${escapeHtml(c.url)}">${escapeHtml(c.message)}</a></td><td><a href="https://github.com/${owner}/${encodeURIComponent(c.repo)}">${escapeHtml(c.repo)}</a></td><td>${iso(new Date(c.date))}</td></tr>`
               ).join("\n");
             } else {
               recentHtml = '<tr><td colspan="3">No public commits recorded in the last 30 days.</td></tr>';
@@ -121,7 +125,7 @@ jobs:
             const privateRows = [...privateCategories.entries()]
               .sort((a, b) => new Date(b[1].latest) - new Date(a[1].latest))
               .slice(0, 4)
-              .map(([category, data]) => `<tr><td>${category}</td><td>${data.count}</td><td>${iso(new Date(data.latest))}</td></tr>`)
+              .map(([category, data]) => `<tr><td>${escapeHtml(category)}</td><td>${data.count}</td><td>${iso(new Date(data.latest))}</td></tr>`)
               .join("\n") || '<tr><td colspan="3">No private-repository commits recorded in the last 30 days.</td></tr>';
 
             const section = `<!-- PROFILE_METRICS_START -->
@@ -176,4 +180,4 @@ jobs:
               sha: file.data.sha,
               content: Buffer.from(updated).toString("base64")
             });
-            core.info(`Updated profile metrics: ${owned.length} owned repositories, ${totalCommits} authored commits.`);
+            core.info(`Updated profile metrics successfully. Repositories scanned: ${owned.length}; authored commits counted: ${totalCommits}. Tokens were not logged.`);
