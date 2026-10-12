@@ -41,6 +41,7 @@ jobs:
             const now = new Date();
             const since = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
             const iso = d => d.toISOString().slice(0, 10);
+            const escapeSvg = value => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\x27/g, "&apos;");
             const escapeHtml = value => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\x27/g, "&#39;");
 
             const repos = await read.paginate(read.rest.repos.listForAuthenticatedUser, {
@@ -128,16 +129,29 @@ jobs:
               .map(([category, data]) => `<tr><td>${escapeHtml(category)}</td><td>${data.count}</td><td>${iso(new Date(data.latest))}</td></tr>`)
               .join("\n") || '<tr><td colspan="3">No private-repository commits recorded in the last 30 days.</td></tr>';
 
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+              <title id="title">Engineering telemetry</title>
+              <desc id="desc">Repository and commit metrics updated ${iso(now)}. Private repository names and commit messages are not shown.</desc>
+              <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#0b1727"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00d9ff"/><stop offset="1" stop-color="#5df2d6"/></linearGradient></defs>
+              <rect width="1200" height="260" rx="18" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="258" rx="17" fill="none" stroke="#24384c"/>
+              <rect x="28" y="24" width="5" height="18" rx="2" fill="url(#accent)"/>
+              <text x="48" y="38" fill="#a6bdcf" font-family="monospace" font-size="15" letter-spacing="2">ENGINEERING TELEMETRY / LIVE REPOSITORY SIGNAL</text>
+              <text x="1170" y="38" text-anchor="end" fill="#55e6ff" font-family="monospace" font-size="12">UPDATED ${iso(now)}</text>
+              <g transform="translate(28 62)"><rect width="364" height="166" rx="12" fill="#0d1d2d" stroke="#294258"/><rect width="364" height="3" rx="1.5" fill="url(#accent)"/>
+                <text x="24" y="34" fill="#8ca9bf" font-family="monospace" font-size="13" letter-spacing="1.5">01 / REPOSITORIES</text><text x="24" y="94" fill="#e9f6ff" font-family="monospace" font-weight="700" font-size="38">${owned.length}</text>
+                <text x="24" y="126" fill="#9db4c7" font-family="sans-serif" font-size="14">Owned · public + private</text><text x="24" y="148" fill="#55e6ff" font-family="sans-serif" font-size="12">${publicCount} public / ${privateCount} private</text></g>
+              <g transform="translate(418 62)"><rect width="364" height="166" rx="12" fill="#0d1d2d" stroke="#294258"/><rect width="364" height="3" rx="1.5" fill="url(#accent)"/>
+                <text x="24" y="34" fill="#8ca9bf" font-family="monospace" font-size="13" letter-spacing="1.5">02 / AUTHORED COMMITS</text><text x="24" y="94" fill="#e9f6ff" font-family="monospace" font-weight="700" font-size="38">${totalCommits.toLocaleString("en-US")}</text>
+                <text x="24" y="126" fill="#9db4c7" font-family="sans-serif" font-size="14">Your commits on default branches</text><text x="24" y="148" fill="#55e6ff" font-family="sans-serif" font-size="12">GitHub author attribution</text></g>
+              <g transform="translate(808 62)"><rect width="364" height="166" rx="12" fill="#0d1d2d" stroke="#294258"/><rect width="364" height="3" rx="1.5" fill="url(#accent)"/>
+                <text x="24" y="34" fill="#8ca9bf" font-family="monospace" font-size="13" letter-spacing="1.5">03 / LAST 30 DAYS</text><text x="24" y="94" fill="#e9f6ff" font-family="monospace" font-weight="700" font-size="38">${commits30d.toLocaleString("en-US")}</text>
+                <text x="24" y="126" fill="#9db4c7" font-family="sans-serif" font-size="14">Commit activity across owned repos</text><text x="24" y="148" fill="#55e6ff" font-family="sans-serif" font-size="12">${activeRepos30d} active repositories</text></g>
+            </svg>`;
+            
             const section = `<!-- PROFILE_METRICS_START -->
             <div align="center">
 
-            <table width="100%">
-            <tr>
-            <td align="center" width="33%"><h2>${owned.length}</h2><sub>OWNED REPOSITORIES</sub><br/><sub>${publicCount} public · ${privateCount} private</sub></td>
-            <td align="center" width="34%"><h2>${totalCommits.toLocaleString("en-US")}</h2><sub>AUTHORED COMMITS</sub><br/><sub>Across owned default branches</sub></td>
-            <td align="center" width="33%"><h2>${commits30d.toLocaleString("en-US")}</h2><sub>COMMITS · 30 DAYS</sub><br/><sub>${activeRepos30d} active repositories</sub></td>
-            </tr>
-            </table>
+            <img src="https://raw.githubusercontent.com/${owner}/${profileRepo}/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository count, authored commits, and last-30-day activity"/>
 
             <sub>Updated ${iso(now)} · Counts generated from GitHub repository history</sub>
 
@@ -179,5 +193,15 @@ jobs:
               message: "chore: refresh live engineering profile metrics",
               sha: file.data.sha,
               content: Buffer.from(updated).toString("base64")
+            });
+
+            const svgFile = await write.rest.repos.getContent({ owner, repo: profileRepo, path: "metrics.svg" });
+            await write.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo: profileRepo,
+              path: "metrics.svg",
+              message: "chore: refresh engineering telemetry dashboard",
+              sha: svgFile.data.sha,
+              content: Buffer.from(svg).toString("base64")
             });
             core.info(`Updated profile metrics successfully. Repositories scanned: ${owned.length}; authored commits counted: ${totalCommits}. Tokens were not logged.`);
