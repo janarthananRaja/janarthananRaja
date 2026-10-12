@@ -60,25 +60,19 @@ LIVE REPOSITORY TELEMETRY · REFRESHED DAILY AFTER SETUP
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<table width="100%">
-<tr>
-<td align="center" width="33%"><h2>18</h2><sub>OWNED REPOSITORIES</sub><br/><sub>5 public · 13 private</sub></td>
-<td align="center" width="34%"><h2>--</h2><sub>AUTHORED COMMITS</sub><br/><sub>All owned repositories</sub></td>
-<td align="center" width="33%"><h2>--</h2><sub>COMMITS · 30 DAYS</sub><br/><sub>Recent activity</sub></td>
-</tr>
-</table>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry dashboard showing repository count, authored commits, and activity in the last 30 days"/>
 
-<sub>Commit metrics are waiting for the read-only repository secret. The workflow uses GitHub's short-lived, repository-scoped token for README updates. [Setup guide](https://github.com/janarthananRaja/janarthananRaja/blob/main/METRICS_SETUP.md).</sub>
+<sub>Live repository history · Refreshed daily after setup · Private repository names and commit messages stay private</sub>
 
 </div>
 
 ### Recent public work
 
-The latest public commit activity will appear here automatically.
+The latest public commit activity will appear here automatically after the read-only repository secret is configured.
 
 ### Recent private engineering themes · sanitized
 
-Recent private activity will be grouped into broad work areas. Repository names and raw private commit messages will never be published.
+Private activity will be grouped into broad work areas. Repository names and raw private commit messages will never be published.
 
 <!-- PROFILE_METRICS_END -->
 
