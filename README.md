@@ -62,7 +62,7 @@ Live project and commit metrics, refreshed daily from GitHub repository history.
 
 <table>
 <tr>
-<td align="center"><h3>--</h3><sub>PROJECTS</sub><br/><sub>Waiting for setup</sub></td>
+<td align="center"><h3>18</h3><sub>PROJECTS</sub><br/><sub>5 public · 13 private</sub></td>
 <td align="center"><h3>--</h3><sub>AUTHORED COMMITS</sub><br/><sub>All owned repositories</sub></td>
 <td align="center"><h3>--</h3><sub>LAST 30 DAYS</sub><br/><sub>Recent activity</sub></td>
 </tr>
@@ -74,7 +74,11 @@ Live project and commit metrics, refreshed daily from GitHub repository history.
 
 ### Recent public work
 
-The latest public commit activity will appear here automatically. Private project names and commit messages are intentionally excluded from the public feed.
+The latest public commit activity will appear here automatically.
+
+### Recent private engineering themes · sanitized
+
+Recent private activity will be grouped into broad work areas. Repository names and raw private commit messages will never be published.
 
 <!-- PROFILE_METRICS_END -->
 
