@@ -75,31 +75,19 @@
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository inventory, all-time authored commits, recent 30-day commits, and older historical commits"/>
 
-<sub>Updated 2026-10-12 · Repositories = current inventory · Authored commits = all-time scanned history · Recent activity and private themes = last 30 days</sub>
+<sub>Unique commits counted once per repository · Recent and historical counts partition the same all-time total · Updated by GitHub Actions</sub>
 
 </div>
 
 ### Recent public work
 
-<table>
-<tr><th>Commit</th><th>Repository</th><th>Date</th></tr>
-<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/8f9adfb4160bc592e500d0a24c03a39b8381ddaf">docs: clarify profile telemetry time ranges</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
-<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/85c16fd37b9b5cd04a8f163b4f23667b447993a0">design: clarify telemetry time ranges</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
-<tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/92d0eced49e7c77626af49b587727faebae35d7f">style: add project image motion and progress indicator</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
-<tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/14ec4f5a3f2c84ac60b82f633b20325648d30308">feat: animate direct project selection</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
-</table>
+<!-- Generated automatically by the profile metrics workflow. -->
 
 ### Private engineering themes · sanitized (last 30 days)
 
-<table>
-<tr><th>Work area</th><th>Commits</th><th>Latest</th></tr>
-<tr><td>Frontend &amp; product UI</td><td>27</td><td>2026-10-06</td></tr>
-<tr><td>Backend &amp; API engineering</td><td>6</td><td>2026-10-01</td></tr>
-<tr><td>General product engineering</td><td>17</td><td>2026-10-01</td></tr>
-<tr><td>Quality, reliability &amp; delivery</td><td>19</td><td>2026-09-30</td></tr>
-</table>
+<!-- Generated automatically by the profile metrics workflow. Private names and raw commit messages are never published. -->
 
 <sub>Private activity is included in aggregate totals. Repository names and raw private commit messages are never published. Work areas are inferred from commit subjects and may be approximate.</sub>
 
