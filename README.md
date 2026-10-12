@@ -1,93 +1,67 @@
 <!--
-  JANARTHANAN RAJA | GitHub Profile
-  Design: deep navy, electric cyan, editorial layout, restrained motion.
-  Privacy: never expose private repository names, raw private commit messages, client data, or credentials.
+  JANARTHANAN RAJA | ENGINEERING PORTFOLIO
+  Visual-first. Evidence-led. Private work remains private.
 -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:07111F,45:102A40,100:00D9FF&text=JANARTHANAN%20RAJA&fontColor=F2FAFF&fontSize=42&fontAlignY=38&desc=SOFTWARE%20ENGINEER%20%2F%20FULL-STACK%20DEVELOPER&descSize=14&descAlignY=59&animation=fadeIn" width="100%" alt="Janarthanan Raja — Software Engineer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:07111F,48:102A40,100:00D9FF&text=JANARTHANAN%20RAJA&fontColor=F2FAFF&fontSize=42&fontAlignY=37&desc=SOFTWARE%20ENGINEER%20%20%E2%80%A2%20%20FULL-STACK%20BUILDER&descSize=14&descAlignY=59&animation=fadeIn" width="100%" alt="Janarthanan Raja — software engineer"/>
+
+<a href="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2600&pause=800&color=55E6FF&center=true&vCenter=true&width=850&lines=Interfaces+with+intent.;APIs+with+clear+contracts.;Architecture+that+can+be+explained.;Metrics+that+can+be+verified."><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2600&pause=800&color=55E6FF&center=true&vCenter=true&width=850&lines=Interfaces+with+intent.;APIs+with+clear+contracts.;Architecture+that+can+be+explained.;Metrics+that+can+be+verified." alt="Animated engineering principles"/></a>
 
 <br/>
 
-<a href="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2800&pause=850&color=55E6FF&center=true&vCenter=true&width=720&lines=Designing+interfaces+that+feel+effortless.;Building+APIs+that+stay+maintainable.;Turning+engineering+data+into+useful+signals.;Learning+continuously.+Shipping+deliberately."><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2800&pause=850&color=55E6FF&center=true&vCenter=true&width=720&lines=Designing+interfaces+that+feel+effortless.;Building+APIs+that+stay+maintainable.;Turning+engineering+data+into+useful+signals.;Learning+continuously.+Shipping+deliberately." alt="Animated engineering principles"/></a>
-
-<br/><br/>
-
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-07111F?style=for-the-badge&logo=firefoxbrowser&logoColor=55E6FF" alt="Portfolio"/></a>
-<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-07111F?style=for-the-badge&logo=github&logoColor=55E6FF" alt="Projects"/></a>
-<a href="https://github.com/janarthananRaja?tab=overview"><img src="https://img.shields.io/badge/ACTIVITY-07111F?style=for-the-badge&logo=githubactions&logoColor=55E6FF" alt="GitHub activity"/></a>
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-0B1727?style=for-the-badge&logo=firefoxbrowser&logoColor=55E6FF" alt="Portfolio"/></a>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0B1727?style=for-the-badge&logo=github&logoColor=55E6FF" alt="Projects"/></a>
+<a href="https://github.com/janarthananRaja?tab=overview"><img src="https://img.shields.io/badge/ACTIVITY-0B1727?style=for-the-badge&logo=githubactions&logoColor=55E6FF" alt="Activity"/></a>
 
 </div>
 
 ---
 
-## The engineer behind the commits
-
-I’m a software engineer with a frontend-first mindset and a full-stack toolkit. I enjoy the point where **good UX, sound architecture, and real-world usefulness** meet.
-
-My work spans responsive interfaces, backend APIs, database-backed workflows, engineering analytics, and privacy-conscious developer tools. I care about how a product feels to use, how easy it is to maintain, and whether its numbers can actually be verified.
+## The short version
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="33%" align="center" valign="top">
 
-### What I bring
+<img src="https://img.shields.io/badge/01-UX%20%26%20UI-102A40?style=flat-square&labelColor=00BFD9" alt="UI"/>
 
-- **Interface craft** — consistent layouts, reusable components, responsive behavior, and thoughtful interaction states.
-- **Full-stack delivery** — connecting frontend workflows to APIs, validation, persistence, and error handling.
-- **Data-aware engineering** — dashboards and reports that explain where numbers came from.
-- **Product thinking** — clear roles, useful defaults, meaningful empty states, and fewer confusing clicks.
-- **Continuous improvement** — debugging from evidence, refactoring with purpose, and documenting decisions.
+### Build the experience
+
+Responsive interfaces, reusable components, clear interaction states, and dashboards that help people act instead of just stare at charts.
 
 </td>
-<td width="50%" valign="top">
+<td width="34%" align="center" valign="top">
 
-### Current direction
+<img src="https://img.shields.io/badge/02-FULL--STACK-102A40?style=flat-square&labelColor=00BFD9" alt="Full stack"/>
 
-<sub>01 / FRONTEND ENGINEERING</sub>
+### Connect the system
 
-Angular, TypeScript, component architecture, design systems, accessibility, and polished product UI.
+Frontend workflows tied to API contracts, business rules, authorization, relational data, and useful failure handling.
 
-<sub>02 / BACKEND ENGINEERING</sub>
+</td>
+<td width="33%" align="center" valign="top">
 
-Java, Spring Boot, REST APIs, authorization, service boundaries, and reliable database access.
+<img src="https://img.shields.io/badge/03-ENGINEERING-102A40?style=flat-square&labelColor=00BFD9" alt="Engineering"/>
 
-<sub>03 / ENGINEERING INTELLIGENCE</sub>
+### Make it verifiable
 
-Git-derived metrics, repository health, verifiable analytics, workflow automation, and safe ingestion.
-
-<sub>04 / SYSTEM DESIGN</sub>
-
-Security-first defaults, maintainability, privacy boundaries, and systems that behave predictably under failure.
+Git-derived analytics, repository health signals, automation, security boundaries, and metrics that can be traced to evidence.
 
 </td>
 </tr>
 </table>
 
-## Engineering telemetry
+## My engineering map
 
-<!-- PROFILE_METRICS_START -->
-<div align="center">
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/architecture-map.svg" width="100%" alt="Visual map showing frontend, API services, identity and access, data telemetry, security, reliability and verification"/>
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Engineering telemetry: owned repositories, authored commits, and recent activity"/>
+<sub>My default mental model: user experience → API contracts → access boundaries → data → observable outcomes. Security and reliability run through every layer, not as an afterthought.</sub>
 
-<sub>Repository history · Automatically refreshed after token setup · Private repository names and messages stay private</sub>
+## Projects, by the problems they solve
 
-</div>
-
-### Recent public work
-
-Recent public commit activity will appear here after the read-only repository secret is configured.
-
-### Private work, kept private
-
-Private activity is included only in aggregate statistics and broad work-area summaries. Repository names and raw commit messages are not published.
-<!-- PROFILE_METRICS_END -->
-
-## Selected engineering work
-
-<sub>Some work is private or built for internal use. The summaries below describe the engineering problems and capabilities without exposing confidential source, repository names, or implementation details.</sub>
+<sub>These are representative systems I have planned, designed, implemented, or iterated on. Private projects are intentionally described by their engineering scope rather than confidential names or source details.</sub>
 
 <table width="100%">
 <tr>
@@ -95,245 +69,251 @@ Private activity is included only in aggregate statistics and broad work-area su
 
 <img src="https://img.shields.io/badge/01-ENGINEERING%20INTELLIGENCE-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Engineering intelligence"/>
 
-### Engineering Intelligence Platform
+### Engineering intelligence platform
 
-A data-driven view of software delivery and repository health, designed to make technical signals useful rather than decorative.
+**The problem:** raw repository activity is noisy; teams need evidence they can inspect and act on.
 
-- Repository health and ownership indicators
-- Contribution and team-balance analysis
-- Engineering risk and hotspot exploration
-- Evidence-led metrics with drill-down paths
-- GitHub API integration and ingestion planning
+**What I worked on**
+- Repository health and ownership signals
+- Team balance, contribution matrix, and risk views
+- Code hotspots and critical-file ownership concepts
+- GitHub API ingestion and rate-limit handling
+- Drill-down paths instead of unexplained scores
 
-<sub>Angular · Spring Boot · GitHub API · SQL</sub>
+**System shape**
+
+`GitHub API → ingestion → analysis services → verified metrics → Angular dashboard`
+
+<sub>Angular · TypeScript · Spring Boot · GitHub API · SQL</sub>
 
 </td>
 <td width="50%" valign="top">
 
-<img src="https://img.shields.io/badge/02-MULTI--SIDED%20COMMERCE-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Multi-sided commerce"/>
+<img src="https://img.shields.io/badge/02-IDENTITY%20%26%20ACCESS-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Identity and access"/>
 
-### Multi-sided Commerce Platform
+### Role-aware operations platform
 
-A role-aware product ecosystem connecting customer journeys, merchant operations, and administrative workflows.
+**The problem:** different organisational levels need different data and permissions, without relying on frontend-only restrictions.
 
-- Separate experiences for distinct user roles
-- API-backed business workflows
-- Relational data modelling
-- Clear status transitions and validation
-- A foundation designed for maintainable growth
+**Architecture work**
+- JWT authentication flow
+- Role and granular permission mapping
+- Hierarchical organisational scoping
+- API-level authorization boundaries
+- Explicit verification and phase-based implementation checkpoints
 
-<sub>Mobile-first UX · Spring Boot · PostgreSQL · REST APIs</sub>
+**System shape**
+
+`Identity → JWT principal → roles + permissions → scoped API access`
+
+<sub>Spring Security · JWT · RBAC · REST APIs</sub>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<img src="https://img.shields.io/badge/03-OPERATIONS%20%26%20ANALYTICS-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Operations and analytics"/>
+<img src="https://img.shields.io/badge/03-COMMERCE%20WORKFLOWS-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Commerce workflows"/>
 
-### KYC & Operations Analytics
+### Multi-sided commerce
 
-Administrative tools for reviewing verification states, understanding operational queues, and turning records into actionable views.
+**The problem:** customers, merchants, and administrators have related data but different jobs and workflows.
 
-- Status-oriented dashboards and filters
-- Data grids with export workflows
-- Summary analytics and reporting
-- Clear loading, error, and empty states
-- Backend-aligned status definitions
+**Product and system scope**
+- Separate customer, merchant, and admin experiences
+- Role-specific workflow design
+- API-backed operations and validation
+- Relational modelling for transactional data
+- Clear status transitions across the product
+
+**System shape**
+
+`Customer app · Merchant app · Admin web → Spring Boot → PostgreSQL`
+
+<sub>Mobile-first UX · Spring Boot · PostgreSQL</sub>
+
+</td>
+<td width="50%" valign="top">
+
+<img src="https://img.shields.io/badge/04-OPERATIONS%20ANALYTICS-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Operations analytics"/>
+
+### KYC & analytics workspace
+
+**The problem:** operational teams need a clear picture of verification states, queues, and exceptions.
+
+**Interface and data work**
+- Status-driven dashboards and filters
+- Data grids and export flows
+- KPI summaries and analytics components
+- Consistent state handling across UI and API
+- CSV, Excel, and PDF reporting workflows
+
+**System shape**
+
+`Operational records → status logic → grid + dashboard → export/report`
 
 <sub>Angular · Angular Material · AG Grid · SQL</sub>
 
 </td>
-<td width="50%" valign="top">
-
-<img src="https://img.shields.io/badge/04-PRIVACY--FIRST%20COMPUTING-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Privacy-first computing"/>
-
-### Personal Companion
-
-An ongoing local-first companion project exploring a modular assistant across Android and desktop, with user control and privacy treated as design requirements.
-
-- Mode-aware companion behavior
-- Modular Kotlin Multiplatform architecture
-- Android UI with Jetpack Compose
-- Offline-conscious and low-power scenarios
-- Explicit boundaries between features and modes
-
-<sub>Kotlin Multiplatform · Kotlin · Jetpack Compose</sub>
-
-[Explore the public repository ↗](https://github.com/janarthananRaja/personal-companion)
-
-</td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<img src="https://img.shields.io/badge/05-EMAIL%20AUTOMATION-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Email automation"/>
+<img src="https://img.shields.io/badge/05-LOCAL--FIRST%20AI-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Local-first AI"/>
 
-### Email Templating & Integration
+### Personal companion
 
-A backend refactoring direction that moves email content out of hard-coded strings and into maintainable templates.
+A privacy-first Android and desktop companion exploring modular modes and user-controlled behavior.
 
-- Separation of message content and business logic
-- Reusable templates for notifications
-- Consistent rendering and data binding
-- Easier review and future template changes
+- Offline, online, and hybrid operating modes
+- Focus, driving, meeting, gaming, sleep, and low-power modes
+- Kotlin Multiplatform module boundaries
+- Android interface built with Jetpack Compose
+- Privacy and predictable behavior as design constraints
 
-<sub>Java · Spring Boot · Thymeleaf · API integration</sub>
+<sub>Kotlin · Kotlin Multiplatform · Jetpack Compose</sub>
+
+[View public repository ↗](https://github.com/janarthananRaja/personal-companion)
 
 </td>
 <td width="50%" valign="top">
 
-<img src="https://img.shields.io/badge/06-DEVELOPER%20TOOLS-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Developer tools"/>
+<img src="https://img.shields.io/badge/06-PLATFORM%20ENGINEERING-0D1D2D?style=flat-square&labelColor=00BFD9" alt="Platform engineering"/>
 
-### Developer Tools & Monitoring
+### Developer tooling & integrations
 
-Experiments and utilities that make application behavior easier to inspect, debug, and operate.
+Small systems and engineering utilities built around practical debugging and delivery needs.
 
-- Service and port troubleshooting
-- GitHub automation and repository analysis
-- Build and deployment diagnostics
-- Camera/media capture integration experiments
-- Practical scripts for repetitive engineering tasks
+- Email templates separated from mail-sending logic
+- GitHub repository scanning and automation
+- CI/build/deployment troubleshooting
+- API integration and error investigation
+- Native camera and media-capture experiments
+- Reproducible scripts for routine maintenance
 
-<sub>Git · GitHub Actions · REST APIs · Docker · Windows tooling</sub>
+<sub>Java · Spring Boot · Thymeleaf · GitHub Actions · Docker</sub>
 
 </td>
 </tr>
 </table>
 
-## Technical toolkit
+## Technical capability map
 
-<table width="100%">
-<tr>
-<td width="25%" valign="top">
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/engineering-stack.svg" width="100%" alt="Visual technical capability map across frontend, backend, data, architecture, and delivery"/>
 
-**Frontend**
+<details>
+<summary><strong>Open the detailed stack</strong></summary>
 
-- Angular
-- TypeScript
-- JavaScript
-- HTML5
-- CSS3
-- Bootstrap
-- Angular Material
-- React fundamentals
+| Area | Tools and concepts |
+|---|---|
+| Frontend | Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap, Angular Material, AG Grid, React fundamentals |
+| Backend | Java, Spring Boot, REST API design, service-layer structure, validation, integration patterns |
+| Data | PostgreSQL, MySQL, SQL, relational modelling, reporting, data-grid workflows |
+| Identity & security | JWT flows, roles and permissions, RBAC concepts, organisational scoping, secret handling, least privilege |
+| Architecture | Module boundaries, UI/API contracts, layered services, data flow, background processing concepts, graceful failure |
+| Delivery & debugging | Git, GitHub Actions, Docker, CI/CD fundamentals, logs, API debugging, deployment troubleshooting |
+| Mobile & desktop | Kotlin Multiplatform, Kotlin, Jetpack Compose, native Android integrations |
 
-</td>
-<td width="25%" valign="top">
+</details>
 
-**Backend**
-
-- Java
-- Spring Boot
-- REST APIs
-- Authentication & authorization
-- Service-layer design
-- Integration patterns
-
-</td>
-<td width="25%" valign="top">
-
-**Data**
-
-- PostgreSQL
-- MySQL
-- SQL
-- Relational modelling
-- Aggregations & reporting
-- Data-grid workflows
-
-</td>
-<td width="25%" valign="top">
-
-**Engineering**
-
-- Git & GitHub
-- GitHub Actions
-- Docker
-- CI/CD fundamentals
-- API debugging
-- Agile delivery
-
-</td>
-</tr>
-</table>
-
-## How I approach engineering
+## How I execute
 
 <div align="center">
-
 <table width="100%">
 <tr>
-<td align="center" width="25%" valign="top">
+<td width="25%" align="center" valign="top">
 
-**01**
+<img src="https://img.shields.io/badge/01-DEFINE-102A40?style=flat-square&labelColor=00BFD9" alt="Define"/>
 
-### Understand
+**Problem → scope**
 
-Start with the user, the constraints, and the actual problem.
-
-</td>
-<td align="center" width="25%" valign="top">
-
-**02**
-
-### Design
-
-Make the data flow, responsibilities, and failure states clear.
+Clarify users, permissions, workflows, edge cases, and acceptance criteria.
 
 </td>
-<td align="center" width="25%" valign="top">
+<td width="25%" align="center" valign="top">
 
-**03**
+<img src="https://img.shields.io/badge/02-DESIGN-102A40?style=flat-square&labelColor=00BFD9" alt="Design"/>
 
-### Build
+**Scope → architecture**
 
-Prefer reusable components, explicit contracts, and readable code.
+Map modules, data flow, API contracts, security boundaries, and failure paths.
 
 </td>
-<td align="center" width="25%" valign="top">
+<td width="25%" align="center" valign="top">
 
-**04**
+<img src="https://img.shields.io/badge/03-IMPLEMENT-102A40?style=flat-square&labelColor=00BFD9" alt="Implement"/>
 
-### Verify
+**Architecture → product**
 
-Test the behavior and trace important metrics back to evidence.
+Build vertical slices, wire real data, and keep UI states aligned with backend behavior.
+
+</td>
+<td width="25%" align="center" valign="top">
+
+<img src="https://img.shields.io/badge/04-VERIFY-102A40?style=flat-square&labelColor=00BFD9" alt="Verify"/>
+
+**Product → evidence**
+
+Test, inspect, document, audit mismatches, and close phases only when verified.
 
 </td>
 </tr>
 </table>
+</div>
+
+### Engineering principles
+
+<details>
+<summary><strong>Metrics must be explainable</strong></summary>
+
+No invented activity, arbitrary productivity scores, or mystery percentages. Metrics should have a defined source, calculation, scope, and drill-down path.
+</details>
+
+<details>
+<summary><strong>Security belongs in the architecture</strong></summary>
+
+Prefer least privilege, short-lived credentials, server-side authorization, explicit scoping, and no secrets in source control.
+</details>
+
+<details>
+<summary><strong>Interfaces include every state</strong></summary>
+
+Loading, empty, validation, failure, permissions, and responsive behavior are part of the feature, not cleanup for later.
+</details>
+
+<details>
+<summary><strong>Execution should be observable</strong></summary>
+
+Use clear phase checkpoints, build feedback, repeatable automation, and evidence that a feature works beyond the happy path.
+</details>
+
+## Live engineering telemetry
+
+<!-- PROFILE_METRICS_START -->
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live repository and commit telemetry"/>
+
+<sub>Automated GitHub history · Public activity is attributable · Private details are sanitized</sub>
 
 </div>
 
-### Principles I care about
+### Recent public work
 
-- **No fake metrics.** If a number cannot be explained or traced to a source, it should not be presented as engineering truth.
-- **Security by default.** Keep credentials out of source, limit permissions, and expose only what a viewer needs to know.
-- **UI is behavior, not decoration.** Loading, empty, error, validation, and responsive states deserve the same care as the happy path.
-- **Privacy is a feature.** Internal project names, source code, client information, and sensitive commit details do not belong in a public showcase.
-- **Useful complexity only.** Add architecture and automation when they solve a real problem, not merely to make a diagram look impressive.
+Public commit highlights will populate after the read-only repository secret is configured.
 
-## Learning & building next
+### Private engineering activity
 
-<sub>My current growth path is focused on depth and production readiness, not collecting technology logos.</sub>
-
-- **Frontend depth:** component architecture, performance, accessibility, state management, and design-system consistency.
-- **Backend depth:** Spring Security, API contracts, transaction boundaries, testing, and service reliability.
-- **Data depth:** query quality, indexing fundamentals, schema design, and trustworthy analytics.
-- **Delivery depth:** CI pipelines, deployment diagnostics, secure secrets handling, and repeatable environments.
-- **System design:** ingestion pipelines, background jobs, observability, and graceful failure behavior.
+Private work is summarized only as aggregate counts and broad work areas. Private repository names, raw commit messages, and confidential implementation details stay private.
+<!-- PROFILE_METRICS_END -->
 
 ## Contribution trail
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/output/contribution-snake-dark.svg" width="100%" alt="Animated GitHub contribution snake"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/output/contribution-snake-dark.svg" width="100%" alt="Animated GitHub contribution history"/>
 
-<sub>Animated contribution visual · GitHub’s native contribution graph remains the source of truth</sub>
-
-<br/>
-
-<a href="https://github.com/janarthananRaja?tab=overview">Open the full GitHub activity graph ↗</a>
+<a href="https://github.com/janarthananRaja?tab=overview">Explore the native contribution graph ↗</a>
 
 </div>
 
@@ -341,10 +321,10 @@ Test the behavior and trace important metrics back to evidence.
 
 <div align="center">
 
-### Build with intent. Measure with evidence. Keep improving.
+**Make it clear. Make it useful. Prove that it works.**
 
-[Portfolio](https://janarthananraja.github.io) · [Public repositories](https://github.com/janarthananRaja?tab=repositories) · [GitHub activity](https://github.com/janarthananRaja?tab=overview)
+<a href="https://janarthananraja.github.io">Portfolio</a> · <a href="https://github.com/janarthananRaja?tab=repositories">Public repositories</a> · <a href="https://github.com/janarthananRaja?tab=overview">GitHub activity</a>
 
-<sub>Designed in dark navy + cyan · Private work stays private</sub>
+<sub>Dark navy × electric cyan · Built around real engineering work · Private work stays private</sub>
 
 </div>
