@@ -53,6 +53,16 @@ jobs:
             let activeRepos30d = 0;
             const publicRecent = [];
             const privateActivity = new Map();
+            const privateCategories = new Map();
+            const classify = message => {
+              const m = (message || "").toLowerCase();
+              if (/auth|token|rbac|permission|security|identity|oauth/.test(m)) return "Security & identity";
+              if (/angular|react|frontend|component|css|layout|dashboard|ui|ux/.test(m)) return "Frontend & product UI";
+              if (/spring|java|backend|api|endpoint|service|controller/.test(m)) return "Backend & API engineering";
+              if (/sql|database|postgres|mysql|analytics|metric|report|query/.test(m)) return "Data & analytics";
+              if (/test|bug|fix|build|ci|workflow|deploy|refactor|performance/.test(m)) return "Quality, reliability & delivery";
+              return "General product engineering";
+            };
 
             for (const repo of owned) {
               if (!repo.default_branch) continue;
@@ -76,7 +86,16 @@ jobs:
               if (recent.length) activeRepos30d++;
 
               if (repo.private) {
-                if (recent.length) privateActivity.set(repo.name, recent.length);
+                if (recent.length) {
+                  privateActivity.set(repo.name, recent.length);
+                  for (const c of recent) {
+                    const category = classify(c.commit?.message);
+                    const item = privateCategories.get(category) || { count: 0, latest: c.commit?.author?.date || "" };
+                    item.count++;
+                    if (c.commit?.author?.date && (!item.latest || c.commit.author.date > item.latest)) item.latest = c.commit.author.date;
+                    privateCategories.set(category, item);
+                  }
+                }
               } else {
                 for (const c of recent.slice(0, 2)) {
                   publicRecent.push({
@@ -108,6 +127,12 @@ jobs:
               recentHtml = '<tr><td colspan="3">No public commits recorded in the last 30 days.</td></tr>';
             }
 
+            const privateRows = [...privateCategories.entries()]
+              .sort((a, b) => new Date(b[1].latest) - new Date(a[1].latest))
+              .slice(0, 4)
+              .map(([category, data]) => `<tr><td>${category}</td><td>${data.count}</td><td>${iso(new Date(data.latest))}</td></tr>`)
+              .join("\\n") || '<tr><td colspan="3">No private-repository commits recorded in the last 30 days.</td></tr>';
+
             const section = `<!-- PROFILE_METRICS_START -->
             <div align="center">
 
@@ -130,7 +155,14 @@ jobs:
             ${recentHtml}
             </table>
 
-            <sub>Private activity is included in the aggregate totals, but private repository names and commit messages are deliberately not published.</sub>
+            ### Recent private engineering themes · sanitized
+
+            <table>
+            <tr><th>Work area</th><th>Commits</th><th>Latest</th></tr>
+            ${privateRows}
+            </table>
+
+            <sub>Private activity is included in aggregate totals. Repository names and raw private commit messages are never published. Work areas are inferred from commit subjects and may be approximate.</sub>
 
             <!-- PROFILE_METRICS_END -->`;
 
