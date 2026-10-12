@@ -84,13 +84,14 @@
 Live counts and recent activity summaries will populate after the read-only repository secret is configured. Until then, commit totals are intentionally not guessed.
 <!-- PROFILE_METRICS_END -->
 
-## Contribution trail
+## Explore the work
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/output/contribution-snake-dark.svg" width="100%" alt="GitHub contribution history"/>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/BROWSE_PUBLIC_REPOSITORIES-DBEAFE?style=for-the-badge&logo=github&logoColor=1D4ED8" alt="Browse public repositories"/></a>
+<a href="https://github.com/janarthananRaja?tab=overview"><img src="https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-EDE9FE?style=for-the-badge&logo=github&logoColor=6D28D9" alt="View GitHub activity"/></a>
 
-<a href="https://github.com/janarthananRaja?tab=overview">View the native contribution graph ↗</a>
+<sub>GitHub's native contribution graph and activity timeline are shown below this README and are controlled by GitHub, not by this page.</sub>
 
 </div>
 
