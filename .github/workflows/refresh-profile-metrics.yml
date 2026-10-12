@@ -127,11 +127,11 @@ jobs:
             const section = `<!-- PROFILE_METRICS_START -->
             <div align="center">
 
-            <table>
+            <table width="100%">
             <tr>
-            <td align="center"><h3>${owned.length}</h3><sub>PROJECTS</sub><br/><sub>${publicCount} public · ${privateCount} private</sub></td>
-            <td align="center"><h3>${totalCommits.toLocaleString("en-US")}</h3><sub>AUTHORED COMMITS</sub><br/><sub>Across owned default branches</sub></td>
-            <td align="center"><h3>${commits30d.toLocaleString("en-US")}</h3><sub>LAST 30 DAYS</sub><br/><sub>${activeRepos30d} active repositories</sub></td>
+            <td align="center" width="33%"><h2>${owned.length}</h2><sub>OWNED REPOSITORIES</sub><br/><sub>${publicCount} public · ${privateCount} private</sub></td>
+            <td align="center" width="34%"><h2>${totalCommits.toLocaleString("en-US")}</h2><sub>AUTHORED COMMITS</sub><br/><sub>Across owned default branches</sub></td>
+            <td align="center" width="33%"><h2>${commits30d.toLocaleString("en-US")}</h2><sub>COMMITS · 30 DAYS</sub><br/><sub>${activeRepos30d} active repositories</sub></td>
             </tr>
             </table>
 
