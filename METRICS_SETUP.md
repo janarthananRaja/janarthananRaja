@@ -32,10 +32,12 @@ The workflow also runs daily.
 ## What the numbers mean
 
 - **Repositories:** non-archived repositories owned by the account, public and private. This is a repository count, not a guarantee that each repository represents one distinct project.
-- **Authored commits:** commits attributed by GitHub to the account on each owned repository's default branch. This is not a count of every commit by every contributor, and it can differ from the profile contribution graph.
-- **Last 30 days:** authored commits dated within the last 30 days.
-- **Active repositories:** owned repositories with at least one attributed commit in the last 30 days.
+- **All-time authored commits:** unique commits attributed by GitHub to the configured author identities across every branch of each owned, non-archived repository with history. Commits are deduplicated by repository + commit SHA, so shared commits across branches count once.
+- **Last 30 days:** commits whose author timestamp falls within the rolling 30-day window ending at the workflow snapshot time. All-time and recent metrics use the same repositories, identities, and deduplication rules.
+- **Older than 30 days:** all-time authored commits minus recent authored commits. These two periods partition the same all-time set.
+- **Active repositories:** distinct owned repositories with at least one qualifying authored commit in the last 30 days.
+- **Configured author identities:** `janarthananRaja` and `Janarthanan9751`. Add another identity only after verifying it belongs to the profile owner.
 - **Recent public work:** latest commit subjects from public repositories only.
 - **Private work:** included in aggregate counts, but private repository names and commit messages are not published.
 
-GitHub's commit API applies GitHub's author attribution and repository history rules. Commits in other branches, unlinked author emails, and inaccessible repositories may not be included. Treat these metrics as transparent repository-history counts, not a universal count of every Git operation ever made on every machine.
+The workflow scans every branch exposed by the read token and fails closed if branch/history access fails, rather than publishing partial totals. GitHub's commit API still applies author attribution rules: commits using an unlinked email or an unconfigured username may not be included. The rolling window includes its lower boundary and excludes commits dated after the snapshot time. These are repository-history counts, not a count of every Git operation ever made on every machine.
