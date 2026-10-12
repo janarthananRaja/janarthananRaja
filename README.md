@@ -68,7 +68,7 @@ LIVE REPOSITORY TELEMETRY · REFRESHED DAILY AFTER SETUP
 </tr>
 </table>
 
-<sub>Commit metrics are waiting for the private-repository read token and profile-write token. Follow the setup guide below. [Owner setup guide](https://github.com/janarthananRaja/janarthananRaja/blob/main/METRICS_SETUP.md).</sub>
+<sub>Commit metrics are waiting for the read-only repository secret. The workflow uses GitHub's short-lived, repository-scoped token for README updates. [Setup guide](https://github.com/janarthananRaja/janarthananRaja/blob/main/METRICS_SETUP.md).</sub>
 
 </div>
 
