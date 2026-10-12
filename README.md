@@ -75,13 +75,31 @@
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Engineering telemetry from repository history"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository count, authored commits, and last-30-day activity"/>
 
-<sub>Verified repository history · Private repository names and raw messages stay private</sub>
+<sub>Updated 2026-10-12 · Counts generated from GitHub repository history</sub>
 
 </div>
 
-Live counts and recent activity summaries will populate after the read-only repository secret is configured. Until then, commit totals are intentionally not guessed.
+### Recent public work
+
+<table>
+<tr><th>Commit</th><th>Repository</th><th>Date</th></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/388d5576772b27807d9cf61c593ee1c829c806df">fix: upgrade metrics workflow to supported github-script runtime</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/e99c3d785becb5bdb60c7c48205e1732dd922eaf">fix: use native fetch for private-safe metrics API reads</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/92d0eced49e7c77626af49b587727faebae35d7f">style: add project image motion and progress indicator</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/14ec4f5a3f2c84ac60b82f633b20325648d30308">feat: animate direct project selection</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
+</table>
+
+### Recent private engineering themes · sanitized
+
+<table>
+<tr><th>Work area</th><th>Commits</th><th>Latest</th></tr>
+<tr><td colspan="3">No private-repository commits recorded in the last 30 days.</td></tr>
+</table>
+
+<sub>Private activity is included in aggregate totals. Repository names and raw private commit messages are never published. Work areas are inferred from commit subjects and may be approximate.</sub>
+
 <!-- PROFILE_METRICS_END -->
 
 ## Explore the work
