@@ -2,11 +2,11 @@
 
 This repository's public profile README can show live, verified repository and commit metrics without exposing private project names or commit messages.
 
-## Required repository secrets
+## Required repository secret
 
 Open **Settings → Secrets and variables → Actions → New repository secret** in `janarthananRaja/janarthananRaja`.
 
-### 1. `PROFILE_READ_TOKEN`
+### `PROFILE_READ_TOKEN`
 
 Create a fine-grained personal access token with your account as the resource owner and access to **all repositories you own** (including private repositories).
 
@@ -16,19 +16,13 @@ Permissions:
 
 This token is used only to count authored commits and inspect dates. It is never printed or written to the generated README.
 
-### 2. `PROFILE_WRITE_TOKEN`
+### Why there is no write token secret
 
-Create a separate fine-grained personal access token restricted to only the `janarthananRaja/janarthananRaja` profile repository.
-
-Permissions:
-- **Metadata:** Read-only
-- **Contents:** Read and write
-
-This token updates the metrics section in `README.md`. Do not use a token with broader write access.
+The workflow uses GitHub Actions' short-lived `GITHUB_TOKEN` to update this profile repository. Its permissions are limited in the workflow to `contents: write` for this repository only. This avoids storing a second long-lived personal access token.
 
 ## Run it
 
-1. Add both secrets with the exact names above.
+1. Add `PROFILE_READ_TOKEN` as a repository secret.
 2. Open **Actions → Refresh engineering profile metrics**.
 3. Select **Run workflow**.
 4. Check the run logs for the summary. The README metrics update when the workflow succeeds.
@@ -37,7 +31,7 @@ The workflow also runs daily.
 
 ## What the numbers mean
 
-- **Projects:** non-archived repositories owned by the account, public and private.
+- **Repositories:** non-archived repositories owned by the account, public and private. This is a repository count, not a guarantee that each repository represents one distinct project.
 - **Authored commits:** commits attributed by GitHub to the account on each owned repository's default branch. This is not a count of every commit by every contributor, and it can differ from the profile contribution graph.
 - **Last 30 days:** authored commits dated within the last 30 days.
 - **Active repositories:** owned repositories with at least one attributed commit in the last 30 days.
