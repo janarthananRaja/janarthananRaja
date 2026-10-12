@@ -52,7 +52,9 @@ I'm a software engineer who enjoys building practical products across the **fron
 
 </div>
 
-## <img src="https://img.shields.io/badge/03-SELECTED_WORK-0A2638?style=flat-square&labelColor=07111F" alt="03 Selected work"/>
+## <img src="https://img.shields.io/badge/03-ENGINEERING_PORTFOLIO-0A2638?style=flat-square&labelColor=07111F" alt="03 Engineering portfolio"/>
+
+A selection of product and engineering work. Some implementations are maintained in private repositories, so this section describes the work at a high level without exposing source code.
 
 <table>
 <tr>
@@ -61,13 +63,11 @@ I'm a software engineer who enjoys building practical products across the **fron
 ### ⚡ DevPulse
 **Engineering Intelligence Platform**
 
-An engineering analytics product focused on repository health, contribution visibility, ownership, and actionable engineering insights.
+Repository intelligence and engineering analytics focused on health signals, contribution visibility, ownership, and actionable findings.
 
-- Angular frontend and Spring Boot backend
-- Git-based engineering signals and analytics
-- Emphasis on verifiable metrics and actionable findings
-
-<sub>Project details and screenshots will be published only when approved for public sharing.</sub>
+- Angular + Spring Boot architecture
+- Git-based engineering insights
+- Emphasis on evidence-backed metrics
 
 </td>
 <td width="50%" valign="top">
@@ -75,68 +75,120 @@ An engineering analytics product focused on repository health, contribution visi
 ### 🌱 Namma Grammo
 **Multi-sided commerce platform**
 
-A product concept spanning customer experiences, merchant workflows, and administration.
+Customer, merchant, and administration experiences designed around connected workflows.
 
-- Customer and merchant app experiences
+- Customer and merchant app concepts
 - Admin web workflows
-- Spring Boot APIs and PostgreSQL data layer
-
-<sub>Only non-confidential project material belongs in this public profile.</sub>
+- Spring Boot APIs + PostgreSQL
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 📊 KYC & Analytics
-**Operations dashboard**
+### 🛡️ KYC & Analytics
+**Verification operations dashboard**
 
-Dashboard work focused on verification workflows, status visibility, tabular data, filtering, and reporting.
+Data-heavy interfaces for verification status, operational tracking, and reporting.
 
-- Angular and data-grid interfaces
-- Status-driven views and operational summaries
-- Export and analytics-oriented UI patterns
+- Angular + AG Grid
+- Filtering and status-driven views
+- Export and analytics workflows
 
 </td>
 <td width="50%" valign="top">
 
-### 🧩 Personal Companion
-**Privacy-first assistant project**
+### 🧠 Personal Companion
+**Privacy-first assistant**
 
-An ongoing exploration of a local-first personal companion across desktop and mobile environments.
+A local-first companion project exploring Android and desktop experiences with privacy and user control as core principles.
 
-- Mode-based companion experience
-- Android and desktop architecture exploration
-- Privacy, context, and practical automation
+- Kotlin Multiplatform
+- Jetpack Compose
+- Modular, plugin-oriented architecture
 
-<a href="https://github.com/janarthananRaja/personal-companion">View public repository ↗</a>
+<a href="https://github.com/janarthananRaja/personal-companion">Explore public repository ↗</a>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ✉️ Email Templating
+**Reusable notification architecture**
+
+A refactoring effort to move hard-coded email markup into maintainable, reusable templates.
+
+- Java + Spring Boot
+- Template-driven email rendering
+- Cleaner separation of content and delivery
+
+</td>
+<td width="50%" valign="top">
+
+### 💬 Support & Dashboard Interfaces
+**Product UI engineering**
+
+Interface work spanning support workflows, dashboard views, and data-oriented user experiences.
+
+- Angular UI patterns
+- Reusable components
+- Focus on usability and consistency
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🎬 Cinematic Studio
+**Visual-first web experience**
+
+A design-led web project exploring immersive presentation and media-oriented interfaces.
+
+- Frontend and backend separation
+- Visual storytelling
+- Responsive product experience
+
+</td>
+<td width="50%" valign="top">
+
+### 🧰 Developer Tools & Monitoring
+**Practical engineering utilities**
+
+Exploration of monitoring interfaces, developer workflows, and tools that make system behavior easier to understand.
+
+- React + TypeScript experience
+- API integration
+- Operational visibility
+
+<a href="https://github.com/janarthananRaja/Health-monitor">Public repository: Health-monitor ↗</a>
 
 </td>
 </tr>
 </table>
 
-> Some work is maintained in private repositories. This profile describes project scope at a high level and does not publish proprietary source code, internal URLs, credentials, or confidential implementation details.
+<div align="center">
 
-## <img src="https://img.shields.io/badge/04-GITHUB_ACTIVITY-0A2638?style=flat-square&labelColor=07111F" alt="04 GitHub activity"/>
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/OPEN_PORTFOLIO-07111F?style=for-the-badge&logo=firefoxbrowser&logoColor=57D9FF" alt="Open portfolio"/></a>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/BROWSE_PUBLIC_REPOS-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="Browse public repositories"/></a>
+
+</div>
+
+## <img src="https://img.shields.io/badge/04-CONTRIBUTION_SIGNAL-0A2638?style=flat-square&labelColor=07111F" alt="04 Contribution signal"/>
 
 <div align="center">
 
-<a href="https://github.com/janarthananRaja">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=janarthananRaja&show_icons=true&hide_border=true&bg_color=07111F&title_color=57D9FF&text_color=D5E7F2&icon_color=57D9FF&ring_color=57D9FF" alt="GitHub stats"/>
-</a>
-<a href="https://github.com/janarthananRaja">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=janarthananRaja&layout=compact&hide_border=true&bg_color=07111F&title_color=57D9FF&text_color=D5E7F2" alt="Top languages"/>
-</a>
-
-<br/>
-
-<a href="https://github.com/janarthananRaja">
-  <img src="https://streak-stats.demolab.com?user=janarthananRaja&hide_border=true&background=07111F&ring=57D9FF&fire=57D9FF&currStreakLabel=57D9FF&sideLabels=D5E7F2&currStreakNum=F4FBFF&sideNums=F4FBFF&dates=8AA7BB" alt="GitHub contribution streak" width="70%"/>
+<a href="https://github.com/janarthananRaja?tab=overview">
+  <img src="https://img.shields.io/badge/GITHUB_ACTIVITY-View_official_contribution_graph-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="View official GitHub contribution graph"/>
 </a>
 
 </div>
 
-<sub>Stats and language cards are provided by external services and may be unavailable or rate-limited. Language proportions reflect repository contents, not necessarily skill level.</sub>
+GitHub's own contribution graph is the source of truth for profile contribution activity. It can include anonymized private-repository activity when **Private contributions** is enabled in your profile's contribution settings. External README statistics cards may only see public repository data or a partial API result, so this profile intentionally avoids displaying an unverified total as your all-time commit count.
+
+**To show private activity:** open your GitHub profile → **Contribution settings** → enable **Private contributions**. This shows contribution activity without exposing private repository names or source code.
+
+> Project descriptions are intentionally high-level. Private repository names, internal URLs, source code, credentials, and confidential implementation details are not published here.
 
 ## <img src="https://img.shields.io/badge/05-CURRENT_FOCUS-0A2638?style=flat-square&labelColor=07111F" alt="05 Current focus"/>
 
