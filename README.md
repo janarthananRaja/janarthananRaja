@@ -75,19 +75,31 @@
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository inventory, all-time authored commits, recent 30-day commits, and older historical commits"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
 
-<sub>Unique commits counted once per repository · Recent and historical counts partition the same all-time total · Updated by GitHub Actions</sub>
+<sub>Updated 2026-10-12 · Repositories = current inventory · Authored commits = all-time scanned history · Recent activity and private themes = last 30 days</sub>
 
 </div>
 
 ### Recent public work
 
-<!-- Generated automatically by the profile metrics workflow. -->
+<table>
+<tr><th>Commit</th><th>Repository</th><th>Date</th></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/1096b6ee22d947dd7b459b012438b2ffa9de7371">design: balance four-panel telemetry layout</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/597a0fca433b7772a3aef7d216ffb7a634e3c765">design: balance four-panel telemetry layout</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/92d0eced49e7c77626af49b587727faebae35d7f">style: add project image motion and progress indicator</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/14ec4f5a3f2c84ac60b82f633b20325648d30308">feat: animate direct project selection</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
+</table>
 
 ### Private engineering themes · sanitized (last 30 days)
 
-<!-- Generated automatically by the profile metrics workflow. Private names and raw commit messages are never published. -->
+<table>
+<tr><th>Work area</th><th>Commits</th><th>Latest</th></tr>
+<tr><td>Frontend &amp; product UI</td><td>27</td><td>2026-10-06</td></tr>
+<tr><td>Backend &amp; API engineering</td><td>6</td><td>2026-10-01</td></tr>
+<tr><td>General product engineering</td><td>17</td><td>2026-10-01</td></tr>
+<tr><td>Quality, reliability &amp; delivery</td><td>19</td><td>2026-09-30</td></tr>
+</table>
 
 <sub>Private activity is included in aggregate totals. Repository names and raw private commit messages are never published. Work areas are inferred from commit subjects and may be approximate.</sub>
 
