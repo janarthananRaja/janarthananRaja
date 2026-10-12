@@ -75,7 +75,7 @@
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg?v=2026-10-12" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
 
 <sub>Updated 2026-10-12 · Repositories = current inventory · Authored commits = all-time scanned history · Recent activity and private themes = last 30 days</sub>
 
