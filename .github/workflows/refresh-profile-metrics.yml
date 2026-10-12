@@ -97,18 +97,27 @@ jobs:
               if (repo.size === 0) continue; // Empty repositories have no commit history.
               let commits = [];
               try {
-                const params = new URLSearchParams({
-                  sha: repo.default_branch,
-                  author: owner,
-                  per_page: "100"
-                });
-                commits = await readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/commits?${params.toString()}`);
+                // Scan every branch, then deduplicate by commit SHA so shared history
+                // is not counted repeatedly when branches point to the same commits.
+                const branches = await readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/branches?per_page=100`);
+                const commitsBySha = new Map();
+                for (const branch of branches) {
+                  const params = new URLSearchParams({
+                    sha: branch.name,
+                    author: owner,
+                    per_page: "100"
+                  });
+                  const branchCommits = await readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/commits?${params.toString()}`);
+                  for (const commit of branchCommits) {
+                    if (commit?.sha) commitsBySha.set(commit.sha, commit);
+                  }
+                }
+                commits = [...commitsBySha.values()];
               } catch (e) {
                 // Fail closed: never publish misleading partial totals when access is missing.
-                core.setFailed("Could not read commit history for every owned repository. Check PROFILE_READ_TOKEN repository access and Contents: read permission. No metrics were published.");
+                core.setFailed("Could not read branches or commit history for every owned repository. Check PROFILE_READ_TOKEN repository access and Contents: read permission. No metrics were published.");
                 return;
               }
-
               totalCommits += commits.length;
               const recent = commits.filter(c => c.commit?.author?.date && new Date(c.commit.author.date) >= since);
               commits30d += recent.length;
@@ -160,7 +169,7 @@ jobs:
               <rect width="1200" height="280" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="278" rx="21" fill="none" stroke="#d9e4f2"/>
               <rect x="28" y="25" width="5" height="18" rx="2" fill="url(#accent)"/><text x="48" y="39" fill="#334155" font-family="monospace" font-size="15" letter-spacing="1.5">ENGINEERING TELEMETRY</text><text x="1170" y="39" text-anchor="end" fill="#64748b" font-family="monospace" font-size="12">UPDATED ${iso(now)}</text>
               <g transform="translate(28 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">01 / REPOSITORIES</text><text x="24" y="100" fill="#0f172a" font-family="monospace" font-weight="700" font-size="42">${owned.length}</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Owned repositories</text><text x="24" y="158" fill="#2563eb" font-family="sans-serif" font-size="13">${publicCount} public / ${privateCount} private</text></g>
-              <g transform="translate(418 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">02 / AUTHORED COMMITS</text><text x="24" y="100" fill="#0f172a" font-family="monospace" font-weight="700" font-size="42">${totalCommits.toLocaleString("en-US")}</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Commits on owned default branches</text><text x="24" y="158" fill="#2563eb" font-family="sans-serif" font-size="13">Attributed by GitHub author identity</text></g>
+              <g transform="translate(418 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">02 / AUTHORED COMMITS</text><text x="24" y="100" fill="#0f172a" font-family="monospace" font-weight="700" font-size="42">${totalCommits.toLocaleString("en-US")}</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Unique authored commits across all owned branches</text><text x="24" y="158" fill="#2563eb" font-family="sans-serif" font-size="13">Attributed by GitHub author identity</text></g>
               <g transform="translate(808 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">03 / LAST 30 DAYS</text><text x="24" y="100" fill="#0f172a" font-family="monospace" font-weight="700" font-size="42">${commits30d.toLocaleString("en-US")}</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Recent commit activity</text><text x="24" y="158" fill="#2563eb" font-family="sans-serif" font-size="13">${activeRepos30d} active repositories</text></g>
             </svg>`;
             
@@ -169,7 +178,7 @@ jobs:
 
             <img src="https://raw.githubusercontent.com/${owner}/${profileRepo}/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository count, authored commits, and last-30-day activity"/>
 
-            <sub>Updated ${iso(now)} · Counts generated from GitHub repository history</sub>
+            <sub>Updated ${iso(now)} · Counts generated across all owned repositories and branches; duplicate commit SHAs are removed</sub>
 
             </div>
 
