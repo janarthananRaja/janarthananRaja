@@ -18,7 +18,6 @@
 
 <a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-07111F?style=for-the-badge&logo=firefoxbrowser&logoColor=57D9FF" alt="Portfolio"/></a>
 <a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="Projects"/></a>
-<a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LINKEDIN-07111F?style=for-the-badge&logo=linkedin&logoColor=57D9FF" alt="LinkedIn"/></a>
 
 </div>
 
