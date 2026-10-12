@@ -77,7 +77,7 @@
 
 <img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository count, authored commits, and last-30-day activity"/>
 
-<sub>Updated 2026-10-12 · Counts generated across all owned repositories and branches; duplicate commit SHAs are removed</sub>
+<sub>Updated 2026-10-12 · Repositories = current inventory · Authored commits = all-time scanned history · Recent activity and private themes = last 30 days</sub>
 
 </div>
 
@@ -91,7 +91,7 @@
 <tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/14ec4f5a3f2c84ac60b82f633b20325648d30308">feat: animate direct project selection</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
 </table>
 
-### Recent private engineering themes · sanitized
+### Private engineering themes · sanitized (last 30 days)
 
 <table>
 <tr><th>Work area</th><th>Commits</th><th>Latest</th></tr>
