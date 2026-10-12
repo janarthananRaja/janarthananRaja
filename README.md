@@ -75,7 +75,7 @@
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: repository count, authored commits, and last-30-day activity"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
 
 <sub>Updated 2026-10-12 · Repositories = current inventory · Authored commits = all-time scanned history · Recent activity and private themes = last 30 days</sub>
 
@@ -85,8 +85,8 @@
 
 <table>
 <tr><th>Commit</th><th>Repository</th><th>Date</th></tr>
-<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/72e54a60ede8d8e0ce9e5cd7a8b9315321b5cc94">fix: count authored commits across all repository branches</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
-<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/388d5576772b27807d9cf61c593ee1c829c806df">fix: upgrade metrics workflow to supported github-script runtime</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/8f9adfb4160bc592e500d0a24c03a39b8381ddaf">docs: clarify profile telemetry time ranges</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
+<tr><td><a href="https://github.com/janarthananRaja/janarthananRaja/commit/85c16fd37b9b5cd04a8f163b4f23667b447993a0">design: clarify telemetry time ranges</a></td><td><a href="https://github.com/janarthananRaja/janarthananRaja">janarthananRaja</a></td><td>2026-10-12</td></tr>
 <tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/92d0eced49e7c77626af49b587727faebae35d7f">style: add project image motion and progress indicator</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
 <tr><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io/commit/14ec4f5a3f2c84ac60b82f633b20325648d30308">feat: animate direct project selection</a></td><td><a href="https://github.com/janarthananRaja/janarthananraja.github.io">janarthananraja.github.io</a></td><td>2026-10-12</td></tr>
 </table>
