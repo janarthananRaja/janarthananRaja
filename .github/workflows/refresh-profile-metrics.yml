@@ -26,15 +26,40 @@ jobs:
         with:
           github-token: ${{ github.token }}
           script: |
-            const { getOctokit } = require("@actions/github");
             const readToken = process.env.PROFILE_READ_TOKEN;
             if (!readToken) {
-              core.setFailed("Missing PROFILE_READ_TOKEN. Add the repository secret described in METRICS_SETUP.md.");
+              core.setFailed("Missing PROFILE_READ_TOKEN. Add the repository secret described in METRICS_SETUP.md, then rerun this workflow.");
               return;
             }
 
-            const read = getOctokit(readToken);
-            // github-script client uses the short-lived, repository-scoped GITHUB_TOKEN.
+            // Use the built-in fetch API for read-only cross-repository requests.
+            // The GitHub Script-provided Octokit client (github) is used only to write
+            // generated files back to this profile repository.
+            const readApi = async path => {
+              const all = [];
+              let url = `https://api.github.com${path}`;
+              while (url) {
+                const response = await fetch(url, {
+                  headers: {
+                    Authorization: `Bearer ${readToken}`,
+                    Accept: "application/vnd.github+json",
+                    "X-GitHub-Api-Version": "2022-11-28"
+                  }
+                });
+                if (!response.ok) {
+                  const body = await response.text();
+                  throw new Error(`GitHub read API failed (${response.status}) for ${url}: ${body.slice(0, 300)}`);
+                }
+                const data = await response.json();
+                if (!Array.isArray(data)) return data;
+                all.push(...data);
+                const link = response.headers.get("link") || "";
+                const next = link.split(",").find(part => part.includes('rel="next"'));
+                url = next ? next.match(/<([^>]+)>/)?.[1] || "" : "";
+              }
+              return all;
+            };
+            // github-script's built-in client uses the short-lived repository-scoped GITHUB_TOKEN.
             const write = github;
             const owner = "janarthananRaja";
             const profileRepo = "janarthananRaja";
@@ -44,12 +69,13 @@ jobs:
             const escapeSvg = value => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\x27/g, "&apos;");
             const escapeHtml = value => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\x27/g, "&#39;");
 
-            const repos = await read.paginate(read.rest.repos.listForAuthenticatedUser, {
-              per_page: 100,
-              affiliation: "owner",
-              sort: "updated",
-              direction: "desc"
-            });
+            let repos;
+            try {
+              repos = await readApi("/user/repos?per_page=100&affiliation=owner&sort=updated&direction=desc");
+            } catch (e) {
+              core.setFailed(`Could not list repositories. Check PROFILE_READ_TOKEN validity and repository access. Details: ${e.message}`);
+              return;
+            }
             const owned = repos.filter(r => r.owner.login.toLowerCase() === owner.toLowerCase() && !r.archived);
             let totalCommits = 0;
             let commits30d = 0;
@@ -71,13 +97,12 @@ jobs:
               if (repo.size === 0) continue; // Empty repositories have no commit history.
               let commits = [];
               try {
-                commits = await read.paginate(read.rest.repos.listCommits, {
-                  owner,
-                  repo: repo.name,
+                const params = new URLSearchParams({
                   sha: repo.default_branch,
                   author: owner,
-                  per_page: 100
+                  per_page: "100"
                 });
+                commits = await readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/commits?${params.toString()}`);
               } catch (e) {
                 // Fail closed: never publish misleading partial totals when access is missing.
                 core.setFailed("Could not read commit history for every owned repository. Check PROFILE_READ_TOKEN repository access and Contents: read permission. No metrics were published.");
