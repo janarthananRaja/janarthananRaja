@@ -180,7 +180,7 @@ jobs:
             const section = `<!-- PROFILE_METRICS_START -->
             <div align="center">
 
-            <img src="https://raw.githubusercontent.com/${owner}/${profileRepo}/main/metrics.svg" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
+            <img src="https://raw.githubusercontent.com/${owner}/${profileRepo}/main/metrics.svg?v=${iso(now)}" width="100%" alt="Live engineering telemetry: current repository inventory, all-time authored commits across scanned branches, and commits from the last 30 days"/>
 
             <sub>Updated ${iso(now)} · Repositories = current inventory · Authored commits = all-time scanned history · Recent activity and private themes = last 30 days</sub>
 
