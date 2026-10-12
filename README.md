@@ -1,145 +1,96 @@
-<!-- JANARTHANAN RAJA | Clean, visual funnel to the main portfolio. -->
+<!-- JANARTHANAN RAJA | Visual engineering portfolio. Private work is summarized without exposing repository names or source. -->
+
 <div align="center">
 
 <a href="https://janarthananraja.github.io">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:F3F6F9,48:FFFFFF,100:DBEAFE&text=JANARTHANAN%20RAJA&fontColor=172033&fontSize=42&fontAlignY=37&desc=SOFTWARE%20ENGINEER%20%2F%20FULL-STACK%20BUILDER&descSize=14&descAlignY=59&animation=fadeIn" width="100%" alt="Janarthanan Raja — software engineer"/>
-</a>
-
-<a href="https://janarthananraja.github.io">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2400&pause=750&color=2563EB&center=true&vCenter=true&width=850&lines=Design+the+experience.;Map+the+architecture.;Build+the+workflow.;Verify+the+result." alt="Animated build process"/>
+  <img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/hero.svg" width="100%" alt="Janarthanan Raja — product engineering and full-stack development"/>
 </a>
 
 <br/>
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/EXPLORE_PORTFOLIO-2563EB?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Portfolio"/></a>
-<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-FFFFFF?style=for-the-badge&logo=github&logoColor=2563EB" alt="Projects"/></a>
 
-### I don't just write features. I connect the whole system.
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/OPEN_PORTFOLIO-2563EB?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Open portfolio"/></a>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PUBLIC_PROJECTS-FFFFFF?style=for-the-badge&logo=github&logoColor=1D4ED8" alt="Public projects"/></a>
+<a href="https://linkedin.com/in/janarthanan-r-348b41283"><img src="https://img.shields.io/badge/CONNECT-EEF2FF?style=for-the-badge&logo=linkedin&logoColor=1D4ED8" alt="LinkedIn"/></a>
 
-**UI/UX → API contracts → authorization → data → delivery → verification**
+**I connect the whole product, not just the screen.**
 
-<sub>Frontend-first product engineering · Full-stack implementation · Architecture-aware execution</sub>
+<sub>Experience → APIs → identity → data → delivery → verification</sub>
 
 </div>
 
 ---
 
-## 📂 Engineering briefs
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/01-ENGINEERING%20INTELLIGENCE-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Engineering intelligence"/></a>
-
-**See the signal behind the code**
-
-Repository health, ownership risk, contribution analysis, and metrics traceable to evidence.
-
-<sub>Angular · Spring Boot · GitHub API</sub>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/02-IDENTITY%20%26%20ACCESS-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Identity and access"/></a>
-
-**Permissions that mean something**
-
-JWT authentication, granular permissions, and hierarchical organisational scope.
-
-<sub>Spring Security · JWT · RBAC</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/03-COMMERCE-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Commerce platform"/></a>
-
-**Different users, connected workflows**
-
-Customer, merchant, and admin experiences backed by shared services and relational data.
-
-<sub>Spring Boot · PostgreSQL</sub>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/04-OPERATIONS%20ANALYTICS-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Operations analytics"/></a>
-
-**Turn queues into decisions**
-
-Status-driven dashboards, data grids, reporting, and exports.
-
-<sub>Angular · AG Grid · SQL</sub>
-
-</td>
-</tr>
-</table>
+## The engineering map
 
 <div align="center">
 
-<a href="https://janarthananraja.github.io"><strong>↳ View full project breakdowns and architecture maps on my portfolio ↗</strong></a>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/engineering-map.svg" width="100%" alt="Visual engineering map showing the technical layers and eight project categories"/>
 
 </div>
 
-## ⚙️ Capability map
+## Capability stack
 
 <details>
-<summary><strong>Frontend / UI engineering</strong></summary>
+<summary><strong>01 · Frontend and product experience</strong> — Angular, TypeScript, UI systems</summary>
 
-Reusable components, responsive layouts, state handling, API integration, dashboards, data grids, export flows, and clear loading/error/empty states.
-
-<sub>Angular · TypeScript · JavaScript · HTML5 · CSS3 · Bootstrap · Angular Material · AG Grid</sub>
+- Angular · TypeScript · JavaScript · HTML5 · CSS3
+- Bootstrap · Angular Material · AG Grid
+- Responsive dashboards, reusable components, API integration, forms, state-driven screens, export flows, loading/empty/error states
 
 </details>
 
 <details>
-<summary><strong>Backend / API engineering</strong></summary>
+<summary><strong>02 · Backend and application design</strong> — Java, Spring Boot, REST</summary>
 
-Clear endpoint contracts, maintainable services, input validation, consistent status handling, and backend behavior aligned with the UI.
-
-<sub>Java · Spring Boot · REST APIs · Service-layer design</sub>
+- Java · Spring Boot · REST APIs
+- Service-layer design, validation, exception handling, endpoint contracts
+- PostgreSQL · MySQL · relational data modelling and query-driven workflows
 
 </details>
 
 <details>
-<summary><strong>Architecture & delivery</strong></summary>
+<summary><strong>03 · Security and system architecture</strong> — identity, permissions, scope</summary>
 
-Server-side enforcement, separation of responsibilities, privacy boundaries, repeatable workflows, and observable outcomes.
+- JWT authentication flows and server-side authorization
+- Role/permission mapping and hierarchical organisational scope
+- Separation of responsibilities, privacy boundaries, auditable decisions
+- Architecture checkpoints, implementation evidence, and verification before closure
 
-<sub>JWT · RBAC concepts · Git · GitHub Actions · Docker · PostgreSQL · MySQL</sub>
+</details>
+
+<details>
+<summary><strong>04 · Developer tooling and delivery</strong> — automation, debugging, telemetry</summary>
+
+- Git · GitHub API · GitHub Actions · Docker
+- Repository health analysis, contribution and ownership signals, API pagination and rate-limit handling
+- Build/deployment workflows, reproducible debugging, logs, evidence-led fixes
+- Metrics should be explainable and verifiable, never invented
 
 </details>
 
 ---
 
-## 📈 Live telemetry
+## Live engineering telemetry
 
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Live repository and commit telemetry"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/main/metrics.svg" width="100%" alt="Engineering telemetry from repository history"/>
 
-<sub>Automated repository history · Private names and raw messages stay private</sub>
+<sub>Verified repository history · Private repository names and raw messages stay private</sub>
 
 </div>
 
-### Recent public work
-
-Public commit highlights will appear after the read-only repository secret is configured.
-
-### Private activity, sanitized
-
-Only aggregate counts and broad work areas are published for private work. Private repository names, raw messages, and confidential implementation details stay private.
+Live counts and recent activity summaries will populate after the read-only repository secret is configured. Until then, commit totals are intentionally not guessed.
 <!-- PROFILE_METRICS_END -->
 
 ## Contribution trail
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/output/contribution-snake-dark.svg" width="100%" alt="Animated GitHub contribution history"/>
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/output/contribution-snake-dark.svg" width="100%" alt="GitHub contribution history"/>
 
-<a href="https://github.com/janarthananRaja?tab=overview">Explore the native contribution graph ↗</a>
+<a href="https://github.com/janarthananRaja?tab=overview">View the native contribution graph ↗</a>
 
 </div>
 
@@ -149,6 +100,6 @@ Only aggregate counts and broad work areas are published for private work. Priva
 
 **Understand the problem. Design the system. Ship the proof.**
 
-<a href="https://janarthananraja.github.io">janarthananraja.github.io</a> · <a href="https://github.com/janarthananRaja?tab=repositories">Public repositories</a> · <a href="https://github.com/janarthananRaja?tab=overview">GitHub activity</a>
+<a href="https://janarthananraja.github.io">Portfolio</a> · <a href="https://github.com/janarthananRaja?tab=repositories">Repositories</a> · <a href="https://linkedin.com/in/janarthanan-r-348b41283">LinkedIn</a>
 
 </div>
