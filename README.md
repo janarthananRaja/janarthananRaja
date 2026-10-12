@@ -53,7 +53,7 @@ Software engineer focused on building useful products across the **frontend, bac
 </tr>
 </table>
 
-## `04 / ENGINEERING TELEMETRY`
+## `03 / ENGINEERING TELEMETRY`
 
 Live project and commit metrics, refreshed daily from GitHub repository history.
 
@@ -68,7 +68,7 @@ Live project and commit metrics, refreshed daily from GitHub repository history.
 </tr>
 </table>
 
-<sub>Live metrics will appear after the profile metrics workflow is configured.</sub>
+<sub>Live metrics will appear after the profile metrics workflow is configured. [Owner setup guide](https://github.com/janarthananRaja/janarthananRaja/blob/main/METRICS_SETUP.md).</sub>
 
 </div>
 
@@ -78,7 +78,7 @@ The latest public commit activity will appear here automatically. Private projec
 
 <!-- PROFILE_METRICS_END -->
 
-## `05 / SELECTED BUILDS`
+## `04 / SELECTED BUILDS`
 
 <sub>Some work lives in private repositories. These summaries show the engineering problem space without exposing private source, repository names, or implementation details.</sub>
 
@@ -183,7 +183,7 @@ A public React + TypeScript project exploring a focused monitoring interface.
 
 </div>
 
-## `06 / ACTIVITY RADAR`
+## `05 / ACTIVITY RADAR`
 
 <div align="center">
 
@@ -227,14 +227,14 @@ Trust evidence, not vanity metrics
 
 </div>
 
-## `07 / CURRENT SPRINT`
+## `06 / CURRENT SPRINT`
 
 - Building polished, accessible frontend experiences
 - Designing maintainable APIs and backend services
 - Turning real application data into useful product insights
 - Improving testing, security, observability, and delivery workflows
 
-## `08 / CONNECT`
+## `07 / CONNECT`
 
 <div align="center">
 
