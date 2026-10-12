@@ -104,13 +104,14 @@ jobs:
                 const branches = await readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/branches?per_page=100`);
                 const commitsBySha = new Map();
                 for (const branch of branches) {
-                  const params = new URLSearchParams({
-                    sha: branch.name,
-                    per_page: "100"
-                  });
-                  const branchCommits = await readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/commits?${params.toString()}`);
-                  for (const commit of branchCommits) {
-                    if (commit?.sha && authorIdentities.includes(commit.author?.login)) commitsBySha.set(commit.sha, commit);
+                  const commitsByIdentity = await Promise.all(authorIdentities.map(async authorIdentity => {
+                    const params = new URLSearchParams({ sha: branch.name, author: authorIdentity, per_page: "100" });
+                    return readApi(`/repos/${owner}/${encodeURIComponent(repo.name)}/commits?${params.toString()}`);
+                  }));
+                  for (const branchCommits of commitsByIdentity) {
+                    for (const commit of branchCommits) {
+                      if (commit?.sha) commitsBySha.set(commit.sha, commit);
+                    }
                   }
                 }
                 commits = [...commitsBySha.values()];
