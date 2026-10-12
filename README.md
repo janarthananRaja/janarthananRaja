@@ -55,20 +55,20 @@ Software engineer focused on building useful products across the **frontend, bac
 
 ## `03 / ENGINEERING TELEMETRY`
 
-Live project and commit metrics, refreshed daily from GitHub repository history.
+LIVE REPOSITORY TELEMETRY · REFRESHED DAILY AFTER SETUP
 
 <!-- PROFILE_METRICS_START -->
 <div align="center">
 
-<table>
+<table width="100%">
 <tr>
-<td align="center"><h3>18</h3><sub>PROJECTS</sub><br/><sub>5 public · 13 private</sub></td>
-<td align="center"><h3>--</h3><sub>AUTHORED COMMITS</sub><br/><sub>All owned repositories</sub></td>
-<td align="center"><h3>--</h3><sub>LAST 30 DAYS</sub><br/><sub>Recent activity</sub></td>
+<td align="center" width="33%"><h2>18</h2><sub>OWNED REPOSITORIES</sub><br/><sub>5 public · 13 private</sub></td>
+<td align="center" width="34%"><h2>--</h2><sub>AUTHORED COMMITS</sub><br/><sub>All owned repositories</sub></td>
+<td align="center" width="33%"><h2>--</h2><sub>COMMITS · 30 DAYS</sub><br/><sub>Recent activity</sub></td>
 </tr>
 </table>
 
-<sub>Live metrics will appear after the profile metrics workflow is configured. [Owner setup guide](https://github.com/janarthananRaja/janarthananRaja/blob/main/METRICS_SETUP.md).</sub>
+<sub>Commit metrics are waiting for the private-repository read token and profile-write token. Follow the setup guide below. [Owner setup guide](https://github.com/janarthananRaja/janarthananRaja/blob/main/METRICS_SETUP.md).</sub>
 
 </div>
 
