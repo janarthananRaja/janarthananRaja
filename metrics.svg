@@ -1,37 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
-  <title id="title">Engineering telemetry</title>
-  <desc id="desc">Live repository and commit metrics. Add the read-only GitHub Actions secret to enable private repository analytics.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#0b1727"/></linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00d9ff"/><stop offset="1" stop-color="#5df2d6"/></linearGradient>
-  </defs>
-  <rect width="1200" height="260" rx="18" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="258" rx="17" fill="none" stroke="#24384c"/>
-  <rect x="28" y="24" width="5" height="18" rx="2" fill="url(#accent)"/>
-  <text x="48" y="38" fill="#a6bdcf" font-family="monospace" font-size="15" letter-spacing="2">ENGINEERING TELEMETRY / LIVE REPOSITORY SIGNAL</text>
-  <text x="1170" y="38" text-anchor="end" fill="#55e6ff" font-family="monospace" font-size="12">TOKEN SETUP REQUIRED</text>
-  <g transform="translate(28 62)">
-    <rect width="364" height="166" rx="12" fill="#0d1d2d" stroke="#294258"/>
-    <rect width="364" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="24" y="34" fill="#8ca9bf" font-family="monospace" font-size="13" letter-spacing="1.5">01 / REPOSITORIES</text>
-    <text x="24" y="94" fill="#e9f6ff" font-family="monospace" font-weight="700" font-size="38">18</text>
-    <text x="24" y="126" fill="#9db4c7" font-family="sans-serif" font-size="14">Owned repositories · public + private</text>
-    <text x="24" y="148" fill="#55e6ff" font-family="sans-serif" font-size="12">5 public / 13 private</text>
-  </g>
-  <g transform="translate(418 62)">
-    <rect width="364" height="166" rx="12" fill="#0d1d2d" stroke="#294258"/>
-    <rect width="364" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="24" y="34" fill="#8ca9bf" font-family="monospace" font-size="13" letter-spacing="1.5">02 / AUTHORED COMMITS</text>
-    <text x="24" y="94" fill="#ffcf7a" font-family="monospace" font-weight="700" font-size="28">LOCKED</text>
-    <text x="24" y="126" fill="#9db4c7" font-family="sans-serif" font-size="14">Your commits on default branches</text>
-    <text x="24" y="148" fill="#ffcf7a" font-family="sans-serif" font-size="12">Add read-only token to unlock</text>
-  </g>
-  <g transform="translate(808 62)">
-    <rect width="364" height="166" rx="12" fill="#0d1d2d" stroke="#294258"/>
-    <rect width="364" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="24" y="34" fill="#8ca9bf" font-family="monospace" font-size="13" letter-spacing="1.5">03 / LAST 30 DAYS</text>
-    <text x="24" y="94" fill="#ffcf7a" font-family="monospace" font-weight="700" font-size="28">LOCKED</text>
-    <text x="24" y="126" fill="#9db4c7" font-family="sans-serif" font-size="14">Commit activity across owned repos</text>
-    <text x="24" y="148" fill="#ffcf7a" font-family="sans-serif" font-size="12">Updates automatically after setup</>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">Engineering telemetry</title><desc id="desc">Repository and commit metrics updated dynamically. Private repository names and commit messages are not shown.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fbff"/><stop offset="1" stop-color="#edf4fc"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+<rect width="1200" height="280" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="278" rx="21" fill="none" stroke="#d9e4f2"/>
+<rect x="28" y="25" width="5" height="18" rx="2" fill="url(#accent)"/><text x="48" y="39" fill="#334155" font-family="monospace" font-size="15" letter-spacing="1.5">ENGINEERING TELEMETRY</text><text x="1170" y="39" text-anchor="end" fill="#64748b" font-family="monospace" font-size="12">LIVE / VERIFIED</text>
+<g transform="translate(28 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">01 / REPOSITORIES</text><text x="24" y="100" fill="#0f172a" font-family="monospace" font-weight="700" font-size="42">18</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Owned repositories</text><text x="24" y="158" fill="#2563eb" font-family="sans-serif" font-size="13">5 public / 13 private</text></g>
+<g transform="translate(418 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">02 / AUTHORED COMMITS</text><text x="24" y="100" fill="#2563eb" font-family="monospace" font-weight="700" font-size="30">AWAITING SETUP</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Your commits on default branches</text><text x="24" y="158" fill="#64748b" font-family="sans-serif" font-size="13">Requires PROFILE_READ_TOKEN</text></g>
+<g transform="translate(808 65)"><rect width="364" height="180" rx="15" fill="#fff" stroke="#dbe5f0"/><rect width="364" height="4" rx="2" fill="url(#accent)"/><text x="24" y="36" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="1.2">03 / LAST 30 DAYS</text><text x="24" y="100" fill="#2563eb" font-family="monospace" font-weight="700" font-size="30">AWAITING SETUP</text><text x="24" y="133" fill="#475569" font-family="sans-serif" font-size="14">Recent commit activity</text><text x="24" y="158" fill="#64748b" font-family="sans-serif" font-size="13">Auto-refreshes after setup</text></g></svg>
