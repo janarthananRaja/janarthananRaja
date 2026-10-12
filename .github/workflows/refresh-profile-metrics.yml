@@ -1,0 +1,156 @@
+name: Refresh engineering profile metrics
+
+on:
+  schedule:
+    - cron: "23 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Calculate private-safe metrics and update profile
+        uses: actions/github-script@v7
+        env:
+          PROFILE_READ_TOKEN: ${{ secrets.PROFILE_READ_TOKEN }}
+          PROFILE_WRITE_TOKEN: ${{ secrets.PROFILE_WRITE_TOKEN }}
+        with:
+          github-token: ${{ secrets.PROFILE_WRITE_TOKEN }}
+          script: |
+            const { getOctokit } = require("@actions/github");
+            const readToken = process.env.PROFILE_READ_TOKEN;
+            const writeToken = process.env.PROFILE_WRITE_TOKEN;
+            if (!readToken || !writeToken) {
+              core.setFailed("Add PROFILE_READ_TOKEN and PROFILE_WRITE_TOKEN repository secrets. See the README setup notes.");
+              return;
+            }
+
+            const read = getOctokit(readToken);
+            const write = getOctokit(writeToken);
+            const owner = "janarthananRaja";
+            const profileRepo = "janarthananRaja";
+            const now = new Date();
+            const since = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+            const iso = d => d.toISOString().slice(0, 10);
+
+            const repos = await read.paginate(read.rest.repos.listForAuthenticatedUser, {
+              per_page: 100,
+              affiliation: "owner",
+              sort: "updated",
+              direction: "desc"
+            });
+            const owned = repos.filter(r => r.owner.login.toLowerCase() === owner.toLowerCase() && !r.archived);
+            let totalCommits = 0;
+            let commits30d = 0;
+            let activeRepos30d = 0;
+            const publicRecent = [];
+            const privateActivity = new Map();
+
+            for (const repo of owned) {
+              if (!repo.default_branch) continue;
+              let commits = [];
+              try {
+                commits = await read.paginate(read.rest.repos.listCommits, {
+                  owner,
+                  repo: repo.name,
+                  sha: repo.default_branch,
+                  author: owner,
+                  per_page: 100
+                });
+              } catch (e) {
+                core.warning(`Skipped commit history for a repository unavailable to the read token (HTTP ${e.status || "unknown"}).`);
+                continue;
+              }
+
+              totalCommits += commits.length;
+              const recent = commits.filter(c => c.commit?.author?.date && new Date(c.commit.author.date) >= since);
+              commits30d += recent.length;
+              if (recent.length) activeRepos30d++;
+
+              if (repo.private) {
+                if (recent.length) privateActivity.set(repo.name, recent.length);
+              } else {
+                for (const c of recent.slice(0, 2)) {
+                  publicRecent.push({
+                    date: c.commit.author.date,
+                    repo: repo.name,
+                    message: (c.commit.message || "Commit").split("\\n")[0].replace(/[<>]/g, "").slice(0, 100),
+                    url: c.html_url
+                  });
+                }
+              }
+            }
+
+            publicRecent.sort((a, b) => new Date(b.date) - new Date(a.date));
+            const publicCount = owned.filter(r => !r.private).length;
+            const privateCount = owned.filter(r => r.private).length;
+            const metricRows = [
+              ["OWNED PROJECTS", owned.length, "Public + private repositories"],
+              ["AUTHORED COMMITS", totalCommits.toLocaleString("en-US"), "Default-branch history across accessible owned repositories"],
+              ["COMMITS · 30 DAYS", commits30d.toLocaleString("en-US"), "Authored commits in the last 30 days"],
+              ["ACTIVE REPOSITORIES", activeRepos30d, "Repositories with authored commits in the last 30 days"]
+            ];
+
+            let recentHtml = "";
+            if (publicRecent.length) {
+              recentHtml = publicRecent.slice(0, 5).map(c =>
+                `<tr><td><a href="${c.url}">${c.message.replace(/&/g, "&amp;")}</a></td><td><a href="https://github.com/${owner}/${c.repo}">${c.repo}</a></td><td>${iso(new Date(c.date))}</td></tr>`
+              ).join("\n");
+            } else {
+              recentHtml = '<tr><td colspan="3">No public commits recorded in the last 30 days.</td></tr>';
+            }
+
+            const section = `<!-- PROFILE_METRICS_START -->
+            <div align="center">
+
+            <table>
+            <tr>
+            <td align="center"><h3>${owned.length}</h3><sub>PROJECTS</sub><br/><sub>${publicCount} public · ${privateCount} private</sub></td>
+            <td align="center"><h3>${totalCommits.toLocaleString("en-US")}</h3><sub>AUTHORED COMMITS</sub><br/><sub>Across owned default branches</sub></td>
+            <td align="center"><h3>${commits30d.toLocaleString("en-US")}</h3><sub>LAST 30 DAYS</sub><br/><sub>${activeRepos30d} active repositories</sub></td>
+            </tr>
+            </table>
+
+            <sub>Updated ${iso(now)} · Counts generated from GitHub repository history</sub>
+
+            </div>
+
+            ### Recent public work
+
+            <table>
+            <tr><th>Commit</th><th>Repository</th><th>Date</th></tr>
+            ${recentHtml}
+            </table>
+
+            <sub>Private activity is included in the aggregate totals, but private repository names and commit messages are deliberately not published.</sub>
+
+            <!-- PROFILE_METRICS_END -->`;
+
+            const file = await write.rest.repos.getContent({ owner, repo: profileRepo, path: "README.md" });
+            const current = Buffer.from(file.data.content, "base64").toString("utf8");
+            const start = "<!-- PROFILE_METRICS_START -->";
+            const end = "<!-- PROFILE_METRICS_END -->";
+            const a = current.indexOf(start);
+            const b = current.indexOf(end);
+            if (a < 0 || b < a) {
+              core.setFailed("README.md is missing the profile metrics markers.");
+              return;
+            }
+            const updated = current.slice(0, a) + section + current.slice(b + end.length);
+            await write.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo: profileRepo,
+              path: "README.md",
+              message: "chore: refresh live engineering profile metrics",
+              sha: file.data.sha,
+              content: Buffer.from(updated).toString("base64")
+            });
+            core.info(`Updated profile metrics: ${owned.length} owned repositories, ${totalCommits} authored commits.`);
