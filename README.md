@@ -91,6 +91,7 @@ Automation, integrations, diagnostics, and repeatable tooling.
 
 ## Open a project brief
 
+<a id="project-engineering-intelligence"></a>
 <details>
 <summary><strong>01 / Engineering Intelligence Platform</strong> · Git analytics, health signals, team risk</summary>
 
@@ -117,6 +118,7 @@ Automation, integrations, diagnostics, and repeatable tooling.
 <sub>Angular · TypeScript · Spring Boot · GitHub API · SQL · GitHub Actions</sub>
 </details>
 
+<a id="project-identity-access"></a>
 <details>
 <summary><strong>02 / Identity, RBAC & Organisational Scoping</strong> · Authentication beyond the login screen</summary>
 
@@ -143,6 +145,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 <sub>Java · Spring Boot · Spring Security · JWT · RBAC · REST</sub>
 </details>
 
+<a id="project-commerce"></a>
 <details>
 <summary><strong>03 / Multi-sided Commerce Platform</strong> · Customer, merchant and admin workflows</summary>
 
@@ -167,6 +170,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 <sub>Mobile-first UX · Spring Boot · PostgreSQL · REST APIs</sub>
 </details>
 
+<a id="project-operations"></a>
 <details>
 <summary><strong>04 / KYC & Operations Analytics</strong> · Operational dashboards and reporting</summary>
 
@@ -187,6 +191,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 <sub>Angular · Angular Material · AG Grid · TypeScript · SQL</sub>
 </details>
 
+<a id="project-companion"></a>
 <details>
 <summary><strong>05 / Personal Companion</strong> · Privacy-first, local-first computing</summary>
 
@@ -211,6 +216,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 [Explore the public repository ↗](https://github.com/janarthananRaja/personal-companion)
 </details>
 
+<a id="project-platform"></a>
 <details>
 <summary><strong>06 / Developer Tools, Integrations & Diagnostics</strong> · Practical engineering utilities</summary>
 
