@@ -1,14 +1,14 @@
 <!-- JANARTHANAN RAJA | Visual-first, expandable engineering portfolio. Private work remains private. -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:07111F,48:102A40,100:00D9FF&text=JANARTHANAN%20RAJA&fontColor=F2FAFF&fontSize=42&fontAlignY=37&desc=SOFTWARE%20ENGINEER%20%2F%20FULL-STACK%20BUILDER&descSize=14&descAlignY=59&animation=fadeIn" width="100%" alt="Janarthanan Raja — software engineer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:F3F6F9,48:FFFFFF,100:DBEAFE&text=JANARTHANAN%20RAJA&fontColor=172033&fontSize=42&fontAlignY=37&desc=SOFTWARE%20ENGINEER%20%2F%20FULL-STACK%20BUILDER&descSize=14&descAlignY=59&animation=fadeIn" width="100%" alt="Janarthanan Raja — software engineer"/>
 
-<a href="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2400&pause=750&color=55E6FF&center=true&vCenter=true&width=850&lines=Design+the+experience.;Map+the+architecture.;Build+the+workflow.;Verify+the+result."><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2400&pause=750&color=55E6FF&center=true&vCenter=true&width=850&lines=Design+the+experience.;Map+the+architecture.;Build+the+workflow.;Verify+the+result." alt="Animated build process"/></a>
+<a href="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2400&pause=750&color=2563EB&center=true&vCenter=true&width=850&lines=Design+the+experience.;Map+the+architecture.;Build+the+workflow.;Verify+the+result."><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=16&duration=2400&pause=750&color=2563EB&center=true&vCenter=true&width=850&lines=Design+the+experience.;Map+the+architecture.;Build+the+workflow.;Verify+the+result." alt="Animated build process"/></a>
 
 <br/>
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-0B1727?style=for-the-badge&logo=firefoxbrowser&logoColor=55E6FF" alt="Portfolio"/></a>
-<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0B1727?style=for-the-badge&logo=github&logoColor=55E6FF" alt="Projects"/></a>
-<a href="https://github.com/janarthananRaja?tab=overview"><img src="https://img.shields.io/badge/ACTIVITY-0B1727?style=for-the-badge&logo=githubactions&logoColor=55E6FF" alt="Activity"/></a>
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-FFFFFF?style=for-the-badge&logo=firefoxbrowser&logoColor=55E6FF" alt="Portfolio"/></a>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-FFFFFF?style=for-the-badge&logo=github&logoColor=55E6FF" alt="Projects"/></a>
+<a href="https://github.com/janarthananRaja?tab=overview"><img src="https://img.shields.io/badge/ACTIVITY-FFFFFF?style=for-the-badge&logo=githubactions&logoColor=55E6FF" alt="Activity"/></a>
 
 ### I don't just write features. I connect the whole system.
 **UI/UX → API contracts → authorization → data → delivery → verification**
@@ -26,7 +26,7 @@
 <tr>
 <td width="33%" valign="top">
 
-<a href="#project-engineering-intelligence"><img src="https://img.shields.io/badge/01-ENGINEERING%20INTELLIGENCE-102A40?style=for-the-badge&labelColor=00BFD9" alt="Engineering intelligence"/></a>
+<a href="#project-engineering-intelligence"><img src="https://img.shields.io/badge/01-ENGINEERING%20INTELLIGENCE-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Engineering intelligence"/></a>
 
 **See the signal behind the code**
 
@@ -36,7 +36,7 @@ Repository health, ownership risk, contribution analysis, and metrics traceable 
 </td>
 <td width="34%" valign="top">
 
-<a href="#project-identity-access"><img src="https://img.shields.io/badge/02-IDENTITY%20%26%20ACCESS-102A40?style=for-the-badge&labelColor=00BFD9" alt="Identity and access"/></a>
+<a href="#project-identity-access"><img src="https://img.shields.io/badge/02-IDENTITY%20%26%20ACCESS-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Identity and access"/></a>
 
 **Permissions that mean something**
 
@@ -46,7 +46,7 @@ JWT authentication, granular permissions, and hierarchical organisational scope.
 </td>
 <td width="33%" valign="top">
 
-<a href="#project-commerce"><img src="https://img.shields.io/badge/03-COMMERCE-102A40?style=for-the-badge&labelColor=00BFD9" alt="Commerce platform"/></a>
+<a href="#project-commerce"><img src="https://img.shields.io/badge/03-COMMERCE-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Commerce platform"/></a>
 
 **Different users, connected workflows**
 
@@ -58,7 +58,7 @@ Customer, merchant, and admin experiences backed by shared services and relation
 <tr>
 <td width="33%" valign="top">
 
-<a href="#project-operations"><img src="https://img.shields.io/badge/04-OPERATIONS%20ANALYTICS-102A40?style=for-the-badge&labelColor=00BFD9" alt="Operations analytics"/></a>
+<a href="#project-operations"><img src="https://img.shields.io/badge/04-OPERATIONS%20ANALYTICS-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Operations analytics"/></a>
 
 **Turn queues into decisions**
 
@@ -68,7 +68,7 @@ Status-driven dashboards, data grids, reporting, and exports.
 </td>
 <td width="34%" valign="top">
 
-<a href="#project-companion"><img src="https://img.shields.io/badge/05-PERSONAL%20COMPANION-102A40?style=for-the-badge&labelColor=00BFD9" alt="Personal companion"/></a>
+<a href="#project-companion"><img src="https://img.shields.io/badge/05-PERSONAL%20COMPANION-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Personal companion"/></a>
 
 **Local-first, mode-aware assistant**
 
@@ -78,7 +78,7 @@ A privacy-first companion exploring Android, desktop, and modular operating mode
 </td>
 <td width="33%" valign="top">
 
-<a href="#project-platform"><img src="https://img.shields.io/badge/06-PLATFORM%20TOOLS-102A40?style=for-the-badge&labelColor=00BFD9" alt="Platform tools"/></a>
+<a href="#project-platform"><img src="https://img.shields.io/badge/06-PLATFORM%20TOOLS-EFF6FF?style=for-the-badge&labelColor=2563EB" alt="Platform tools"/></a>
 
 **Make engineering easier to operate**
 
@@ -97,7 +97,7 @@ Automation, integrations, diagnostics, and repeatable tooling.
 
 <br/>
 
-<img src="https://img.shields.io/badge/PROBLEM-Too%20much%20raw%20Git%20data-102A40?style=flat-square&labelColor=00BFD9" alt="Problem"/>
+<img src="https://img.shields.io/badge/PROBLEM-Too%20much%20raw%20Git%20data-EFF6FF?style=flat-square&labelColor=2563EB" alt="Problem"/>
 
 **Goal:** turn repository activity into engineering signals people can inspect, challenge, and use.
 
@@ -124,7 +124,7 @@ Automation, integrations, diagnostics, and repeatable tooling.
 
 <br/>
 
-<img src="https://img.shields.io/badge/FOCUS-Server--side%20authorization-102A40?style=flat-square&labelColor=00BFD9" alt="Authorization"/>
+<img src="https://img.shields.io/badge/FOCUS-Server--side%20authorization-EFF6FF?style=flat-square&labelColor=2563EB" alt="Authorization"/>
 
 **Goal:** a signed-in user can access only the actions and organisational data allowed by their permissions and scope.
 
@@ -151,7 +151,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 
 <br/>
 
-<img src="https://img.shields.io/badge/FOCUS-Role--specific%20product%20flows-102A40?style=flat-square&labelColor=00BFD9" alt="Commerce"/>
+<img src="https://img.shields.io/badge/FOCUS-Role--specific%20product%20flows-EFF6FF?style=flat-square&labelColor=2563EB" alt="Commerce"/>
 
 **Goal:** keep three user journeys coherent without turning the backend into unrelated endpoints.
 
@@ -176,7 +176,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 
 <br/>
 
-<img src="https://img.shields.io/badge/FOCUS-Operational%20clarity-102A40?style=flat-square&labelColor=00BFD9" alt="Operations"/>
+<img src="https://img.shields.io/badge/FOCUS-Operational%20clarity-EFF6FF?style=flat-square&labelColor=2563EB" alt="Operations"/>
 
 **Goal:** make record-heavy workflows easier to review, filter, track, and report on.
 
@@ -197,7 +197,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 
 <br/>
 
-<img src="https://img.shields.io/badge/FOCUS-User%20control%20%2B%20modularity-102A40?style=flat-square&labelColor=00BFD9" alt="Personal companion"/>
+<img src="https://img.shields.io/badge/FOCUS-User%20control%20%2B%20modularity-EFF6FF?style=flat-square&labelColor=2563EB" alt="Personal companion"/>
 
 **Goal:** explore a companion architecture across Android and desktop while treating privacy, operating context, and power use as design requirements.
 
@@ -222,7 +222,7 @@ Authentication answers *who are you?* Authorization and scoping answer *what can
 
 <br/>
 
-<img src="https://img.shields.io/badge/FOCUS-Reduce%20repetitive%20engineering%20work-102A40?style=flat-square&labelColor=00BFD9" alt="Developer tools"/>
+<img src="https://img.shields.io/badge/FOCUS-Reduce%20repetitive%20engineering%20work-EFF6FF?style=flat-square&labelColor=2563EB" alt="Developer tools"/>
 
 - Move notification HTML into maintainable templates instead of hard-coding it in a mailer.
 - Automate repository analysis and profile telemetry with GitHub APIs and Actions.
@@ -298,7 +298,7 @@ Repeatable workflows, evidence-led debugging, safe credentials, and observable o
 <tr>
 <td width="25%" align="center" valign="top">
 
-<img src="https://img.shields.io/badge/01-DEFINE-102A40?style=flat-square&labelColor=00BFD9" alt="Define"/>
+<img src="https://img.shields.io/badge/01-DEFINE-EFF6FF?style=flat-square&labelColor=2563EB" alt="Define"/>
 
 **Scope the problem**
 
@@ -306,7 +306,7 @@ Users · roles · workflows · edge cases
 </td>
 <td width="25%" align="center" valign="top">
 
-<img src="https://img.shields.io/badge/02-DESIGN-102A40?style=flat-square&labelColor=00BFD9" alt="Design"/>
+<img src="https://img.shields.io/badge/02-DESIGN-EFF6FF?style=flat-square&labelColor=2563EB" alt="Design"/>
 
 **Map the system**
 
@@ -314,7 +314,7 @@ Modules · contracts · data · access
 </td>
 <td width="25%" align="center" valign="top">
 
-<img src="https://img.shields.io/badge/03-BUILD-102A40?style=flat-square&labelColor=00BFD9" alt="Build"/>
+<img src="https://img.shields.io/badge/03-BUILD-EFF6FF?style=flat-square&labelColor=2563EB" alt="Build"/>
 
 **Implement the flow**
 
@@ -322,7 +322,7 @@ UI · APIs · persistence · integration
 </td>
 <td width="25%" align="center" valign="top">
 
-<img src="https://img.shields.io/badge/04-VERIFY-102A40?style=flat-square&labelColor=00BFD9" alt="Verify"/>
+<img src="https://img.shields.io/badge/04-VERIFY-EFF6FF?style=flat-square&labelColor=2563EB" alt="Verify"/>
 
 **Prove the behavior**
 
@@ -333,6 +333,8 @@ Tests · traces · metrics · checkpoints
 </div>
 
 ## Live engineering telemetry
+
+<div align="center"><sub>LIGHT THEME · LIVE REPOSITORY SIGNAL · PRIVATE-SAFE</sub></div>
 
 <!-- PROFILE_METRICS_START -->
 <div align="center">
@@ -368,5 +370,5 @@ Only aggregate counts and broad work areas are published for private work. Priva
 
 <a href="https://janarthananraja.github.io">Portfolio</a> · <a href="https://github.com/janarthananRaja?tab=repositories">Public repositories</a> · <a href="https://github.com/janarthananRaja?tab=overview">GitHub activity</a>
 
-<sub>Dark navy × electric cyan · Visual by default, detail on demand · Private work stays private</sub>
+<sub>Light slate × blue-violet · Visual by default, detail on demand · Private work stays private</sub>
 </div>
