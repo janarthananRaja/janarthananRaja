@@ -1,85 +1,82 @@
 <!--
-  GitHub Profile README
-  Theme: Midnight / Cyan Engineering Command Center
-  Security: Do not add credentials, internal code, client data, or private repository URLs.
+  JANARTHANAN RAJA | Profile README
+  Visual direction: Midnight Ops / Cyan console
+  Security: never publish private repository names, client data, credentials, or internal URLs.
 -->
 
 <div align="center">
 
-<a href="https://github.com/janarthananRaja">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:07111F,45:0A2638,100:00D9FF&height=190&section=header&text=JANARTHANAN%20RAJA&fontSize=38&fontColor=F4FBFF&fontAlignY=38&desc=SOFTWARE%20ENGINEER%20%7C%20FULL-STACK%20DEVELOPER&descAlignY=60&descSize=14" alt="Janarthanan Raja, Software Engineer" width="100%" />
-</a>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:050A14,45:0B2035,100:00D9FF&text=JANARTHANAN%20RAJA&fontColor=F2FAFF&fontSize=40&fontAlignY=37&desc=SOFTWARE%20ENGINEER%20%2F%20FULL-STACK%20DEVELOPER&descSize=13&descAlignY=59" alt="Janarthanan Raja — Software Engineer"/>
 
-<a href="https://github.com/janarthananRaja">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3000&pause=900&color=57D9FF&center=true&vCenter=true&width=650&lines=Building+useful+software.;Engineering+reliable+systems.;Turning+complex+ideas+into+working+products." alt="Engineering philosophy" />
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2600&pause=800&color=51E5FF&center=true&vCenter=true&width=720&lines=DESIGNING+THE+INTERFACE.;ENGINEERING+THE+BACKEND.;MAKING+REAL+SYSTEMS+WORK.;COMMIT.+LEARN.+REFACTOR.+REPEAT." alt="Engineering console tagline"/>
 
 <br/>
 
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-07111F?style=for-the-badge&logo=firefoxbrowser&logoColor=57D9FF" alt="Portfolio"/></a>
-<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="Projects"/></a>
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/%2F%2F_PORTFOLIO-00D9FF?style=for-the-badge&logo=firefoxbrowser&logoColor=06111E&labelColor=00D9FF" alt="Portfolio"/></a>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/%2F%2F_REPOSITORIES-101C2B?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="Repositories"/></a>
+<a href="https://github.com/janarthananRaja"><img src="https://img.shields.io/badge/STATUS-BUILDING-101C2B?style=for-the-badge&logo=githubactions&logoColor=51E5FF" alt="Building"/></a>
 
 </div>
 
 ---
 
-## <img src="https://img.shields.io/badge/01-ABOUT_ME-0A2638?style=flat-square&labelColor=07111F" alt="01 About me"/>
+<table>
+<tr>
+<td width="58%" valign="top">
 
-I'm a software engineer who enjoys building practical products across the **frontend, backend, and data layers**. I care about clean interfaces, maintainable architecture, real data, and systems that behave correctly beyond the happy path.
+### `01 / ENGINEER PROFILE`
 
-- **Currently building:** Full-stack applications and engineering tools.
-- **Frontend:** Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap, Angular Material.
-- **Backend:** Java, Spring Boot, REST APIs.
-- **Data:** MySQL, PostgreSQL, SQL.
-- **Engineering interests:** UI/UX, API design, system architecture, developer tooling, analytics and automation.
-- **Portfolio:** [janarthananraja.github.io](https://janarthananraja.github.io)
+Software engineer focused on building useful products across the **frontend, backend, and data layers**. I care about interfaces that feel intentional, APIs that are maintainable, and engineering insights grounded in real data.
 
-## <img src="https://img.shields.io/badge/02-TECH_STACK-0A2638?style=flat-square&labelColor=07111F" alt="02 Tech stack"/>
+- **Frontend:** Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap
+- **Backend:** Java, Spring Boot, REST APIs
+- **Data:** MySQL, PostgreSQL, SQL
+- **Also exploring:** React, Kotlin Multiplatform, developer tooling
+- **Product mindset:** UI/UX, system design, observability, automation
+
+</td>
+<td width="42%" valign="top">
+
+### `02 / TOOLCHAIN`
 
 <div align="center">
 
-**FRONTEND**
+<img src="https://skillicons.dev/icons?i=angular,ts,js,html,css,bootstrap" alt="Angular, TypeScript, JavaScript, HTML, CSS and Bootstrap"/>
 
-<img src="https://skillicons.dev/icons?i=angular,ts,js,html,css,bootstrap" alt="Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap"/>
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,postgres" alt="Java, Spring, MySQL and PostgreSQL"/>
 
-**BACKEND & DATA**
-
-<img src="https://skillicons.dev/icons?i=java,spring,mysql,postgres" alt="Java, Spring, MySQL, PostgreSQL"/>
-
-**TOOLS & WORKFLOW**
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,postman,docker" alt="Git, GitHub, VS Code, Postman, Docker"/>
+<img src="https://skillicons.dev/icons?i=react,kotlin,git,github,vscode,postman,docker" alt="React, Kotlin, Git, GitHub, VS Code, Postman and Docker"/>
 
 </div>
 
-## <img src="https://img.shields.io/badge/03-ENGINEERING_PORTFOLIO-0A2638?style=flat-square&labelColor=07111F" alt="03 Engineering portfolio"/>
+</td>
+</tr>
+</table>
 
-A selection of product and engineering work. Some implementations are maintained in private repositories, so this section describes the work at a high level without exposing source code.
+## `03 / SELECTED BUILDS`
+
+<sub>Some work lives in private repositories. These summaries show the engineering problem space without exposing private source, repository names, or implementation details.</sub>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### ⚡ DevPulse
-**Engineering Intelligence Platform**
+**Engineering intelligence**
 
-Repository intelligence and engineering analytics focused on health signals, contribution visibility, ownership, and actionable findings.
+Engineering analytics around repository health, contribution visibility, code ownership, and actionable engineering signals.
 
-- Angular + Spring Boot architecture
-- Git-based engineering insights
-- Emphasis on evidence-backed metrics
+<sub>Angular · Spring Boot · Git-based insights</sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### 🌱 Namma Grammo
-**Multi-sided commerce platform**
+**Multi-sided commerce**
 
-Customer, merchant, and administration experiences designed around connected workflows.
+Connected customer, merchant, and administration workflows with a focus on clear role boundaries and dependable APIs.
 
-- Customer and merchant app concepts
-- Admin web workflows
-- Spring Boot APIs + PostgreSQL
+<sub>Mobile experiences · Spring Boot · PostgreSQL</sub>
 
 </td>
 </tr>
@@ -87,13 +84,11 @@ Customer, merchant, and administration experiences designed around connected wor
 <td width="50%" valign="top">
 
 ### 🛡️ KYC & Analytics
-**Verification operations dashboard**
+**Operations dashboard**
 
-Data-heavy interfaces for verification status, operational tracking, and reporting.
+Data-heavy verification workflows, status-driven views, filtering, and reporting designed for operational clarity.
 
-- Angular + AG Grid
-- Filtering and status-driven views
-- Export and analytics workflows
+<sub>Angular · AG Grid · Analytics</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -101,13 +96,11 @@ Data-heavy interfaces for verification status, operational tracking, and reporti
 ### 🧠 Personal Companion
 **Privacy-first assistant**
 
-A local-first companion project exploring Android and desktop experiences with privacy and user control as core principles.
+A local-first companion exploring Android and desktop experiences with privacy, modularity, and user control at the center.
 
-- Kotlin Multiplatform
-- Jetpack Compose
-- Modular, plugin-oriented architecture
+<sub>Kotlin Multiplatform · Jetpack Compose</sub>
 
-<a href="https://github.com/janarthananRaja/personal-companion">Explore public repository ↗</a>
+[↗ Explore the public repository](https://github.com/janarthananRaja/personal-companion)
 
 </td>
 </tr>
@@ -115,25 +108,21 @@ A local-first companion project exploring Android and desktop experiences with p
 <td width="50%" valign="top">
 
 ### ✉️ Email Templating
-**Reusable notification architecture**
+**Notification architecture**
 
-A refactoring effort to move hard-coded email markup into maintainable, reusable templates.
+Moving email content toward reusable templates and cleaner separation between rendering and delivery.
 
-- Java + Spring Boot
-- Template-driven email rendering
-- Cleaner separation of content and delivery
+<sub>Java · Spring Boot · Template-driven rendering</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 💬 Support & Dashboard Interfaces
-**Product UI engineering**
+### 💬 Support & Product Interfaces
+**Frontend engineering**
 
-Interface work spanning support workflows, dashboard views, and data-oriented user experiences.
+Reusable UI patterns for support workflows, dashboards, and data-oriented product experiences.
 
-- Angular UI patterns
-- Reusable components
-- Focus on usability and consistency
+<sub>Angular · Components · API integration</sub>
 
 </td>
 </tr>
@@ -143,25 +132,21 @@ Interface work spanning support workflows, dashboard views, and data-oriented us
 ### 🎬 Cinematic Studio
 **Visual-first web experience**
 
-A design-led web project exploring immersive presentation and media-oriented interfaces.
+A design-led web concept focused on immersive presentation, responsive layouts, and media-oriented interfaces.
 
-- Frontend and backend separation
-- Visual storytelling
-- Responsive product experience
+<sub>Frontend · Backend separation · Visual storytelling</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 🧰 Developer Tools & Monitoring
-**Practical engineering utilities**
+### 🧰 Health Monitor
+**Developer utility**
 
-Exploration of monitoring interfaces, developer workflows, and tools that make system behavior easier to understand.
+A public React + TypeScript project exploring a focused monitoring interface.
 
-- React + TypeScript experience
-- API integration
-- Operational visibility
+<sub>React · TypeScript · Vite</sub>
 
-<a href="https://github.com/janarthananRaja/Health-monitor">Public repository: Health-monitor ↗</a>
+[↗ Explore the public repository](https://github.com/janarthananRaja/Health-monitor)
 
 </td>
 </tr>
@@ -169,47 +154,74 @@ Exploration of monitoring interfaces, developer workflows, and tools that make s
 
 <div align="center">
 
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/OPEN_PORTFOLIO-07111F?style=for-the-badge&logo=firefoxbrowser&logoColor=57D9FF" alt="Open portfolio"/></a>
-<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/BROWSE_PUBLIC_REPOS-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="Browse public repositories"/></a>
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/OPEN_LIVE_PORTFOLIO-00D9FF?style=for-the-badge&logo=firefoxbrowser&logoColor=06111E" alt="Open live portfolio"/></a>
 
 </div>
 
-## <img src="https://img.shields.io/badge/04-CONTRIBUTION_SIGNAL-0A2638?style=flat-square&labelColor=07111F" alt="04 Contribution signal"/>
+## `04 / ACTIVITY RADAR`
 
 <div align="center">
 
-<a href="https://github.com/janarthananRaja?tab=overview">
-  <img src="https://img.shields.io/badge/GITHUB_ACTIVITY-View_official_contribution_graph-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="View official GitHub contribution graph"/>
-</a>
+**MY CONTRIBUTION TIMELINE · AUTO-REFRESHED DAILY**
+
+<img src="https://raw.githubusercontent.com/janarthananRaja/janarthananRaja/output/contribution-snake-dark.svg" alt="Animated contribution calendar showing GitHub activity across the year" width="100%"/>
+
+[**Open the official GitHub contribution graph ↗**](https://github.com/janarthananRaja?tab=overview)
 
 </div>
 
-GitHub's own contribution graph is the source of truth for profile contribution activity. It can include anonymized private-repository activity when **Private contributions** is enabled in your profile's contribution settings. External README statistics cards may only see public repository data or a partial API result, so this profile intentionally avoids displaying an unverified total as your all-time commit count.
-
-**To show private activity:** open your GitHub profile → **Contribution settings** → enable **Private contributions**. This shows contribution activity without exposing private repository names or source code.
-
-> Project descriptions are intentionally high-level. Private repository names, internal URLs, source code, credentials, and confidential implementation details are not published here.
-
-## <img src="https://img.shields.io/badge/05-CURRENT_FOCUS-0A2638?style=flat-square&labelColor=07111F" alt="05 Current focus"/>
-
-- Building polished, accessible frontend experiences.
-- Designing clean REST APIs and maintainable backend services.
-- Turning real application data into useful product insights.
-- Improving testing, security, observability, and delivery workflows.
-
-## <img src="https://img.shields.io/badge/06-LET'S_CONNECT-0A2638?style=flat-square&labelColor=07111F" alt="06 Let's connect"/>
+> **Activity visibility:** enable **Profile → Contribution settings → Private contributions** to include anonymized activity from private repositories. Visitors can see the activity pattern without seeing private repository names or source code. GitHub only counts eligible contributions, so the native profile graph remains the reference for the official total.
 
 <div align="center">
 
-Interested in frontend engineering, full-stack development, thoughtful product design, and useful developer tools.
+<table>
+<tr>
+<td align="center" width="33%">
 
-<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/Explore_my_portfolio-07111F?style=for-the-badge&logo=firefoxbrowser&logoColor=57D9FF" alt="Explore portfolio"/></a>
-<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/Browse_public_projects-07111F?style=for-the-badge&logo=github&logoColor=57D9FF" alt="Browse public projects"/></a>
+**SHIP**
 
-<br/>
+Small, meaningful changes
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,55:0A2638,100:07111F&height=100&section=footer" alt="" width="100%"/>
+</td>
+<td align="center" width="33%">
 
-<sub>Designed with intention. Built with curiosity. Improved with every iteration.</sub>
+**IMPROVE**
+
+Refactor with purpose
+
+</td>
+<td align="center" width="33%">
+
+**VERIFY**
+
+Trust evidence, not vanity metrics
+
+</td>
+</tr>
+</table>
+
+</div>
+
+## `05 / CURRENT SPRINT`
+
+- Building polished, accessible frontend experiences
+- Designing maintainable APIs and backend services
+- Turning real application data into useful product insights
+- Improving testing, security, observability, and delivery workflows
+
+## `06 / CONNECT`
+
+<div align="center">
+
+Interested in frontend engineering, full-stack development, thoughtful product design, and developer tools.
+
+<a href="https://janarthananraja.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-101C2B?style=for-the-badge&logo=firefoxbrowser&logoColor=51E5FF" alt="Portfolio"/></a>
+<a href="https://github.com/janarthananRaja?tab=repositories"><img src="https://img.shields.io/badge/PUBLIC_PROJECTS-101C2B?style=for-the-badge&logo=github&logoColor=51E5FF" alt="Public projects"/></a>
+
+<br/><br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:00D9FF,55:0B2035,100:050A14" alt=""/>
+
+<sub>Curiosity in. Better software out.</sub>
 
 </div>
