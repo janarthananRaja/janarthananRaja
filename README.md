@@ -53,7 +53,32 @@ Software engineer focused on building useful products across the **frontend, bac
 </tr>
 </table>
 
-## `03 / SELECTED BUILDS`
+## `04 / ENGINEERING TELEMETRY`
+
+Live project and commit metrics, refreshed daily from GitHub repository history.
+
+<!-- PROFILE_METRICS_START -->
+<div align="center">
+
+<table>
+<tr>
+<td align="center"><h3>--</h3><sub>PROJECTS</sub><br/><sub>Waiting for setup</sub></td>
+<td align="center"><h3>--</h3><sub>AUTHORED COMMITS</sub><br/><sub>All owned repositories</sub></td>
+<td align="center"><h3>--</h3><sub>LAST 30 DAYS</sub><br/><sub>Recent activity</sub></td>
+</tr>
+</table>
+
+<sub>Live metrics will appear after the profile metrics workflow is configured.</sub>
+
+</div>
+
+### Recent public work
+
+The latest public commit activity will appear here automatically. Private project names and commit messages are intentionally excluded from the public feed.
+
+<!-- PROFILE_METRICS_END -->
+
+## `05 / SELECTED BUILDS`
 
 <sub>Some work lives in private repositories. These summaries show the engineering problem space without exposing private source, repository names, or implementation details.</sub>
 
@@ -158,7 +183,7 @@ A public React + TypeScript project exploring a focused monitoring interface.
 
 </div>
 
-## `04 / ACTIVITY RADAR`
+## `06 / ACTIVITY RADAR`
 
 <div align="center">
 
@@ -202,14 +227,14 @@ Trust evidence, not vanity metrics
 
 </div>
 
-## `05 / CURRENT SPRINT`
+## `07 / CURRENT SPRINT`
 
 - Building polished, accessible frontend experiences
 - Designing maintainable APIs and backend services
 - Turning real application data into useful product insights
 - Improving testing, security, observability, and delivery workflows
 
-## `06 / CONNECT`
+## `08 / CONNECT`
 
 <div align="center">
 
