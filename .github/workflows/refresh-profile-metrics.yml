@@ -52,7 +52,6 @@ jobs:
             let commits30d = 0;
             let activeRepos30d = 0;
             const publicRecent = [];
-            const privateActivity = new Map();
             const privateCategories = new Map();
             const classify = message => {
               const m = (message || "").toLowerCase();
@@ -87,7 +86,6 @@ jobs:
 
               if (repo.private) {
                 if (recent.length) {
-                  privateActivity.set(repo.name, recent.length);
                   for (const c of recent) {
                     const category = classify(c.commit?.message);
                     const item = privateCategories.get(category) || { count: 0, latest: c.commit?.author?.date || "" };
@@ -101,7 +99,7 @@ jobs:
                   publicRecent.push({
                     date: c.commit.author.date,
                     repo: repo.name,
-                    message: (c.commit.message || "Commit").split("\\n")[0].replace(/[<>]/g, "").slice(0, 100),
+                    message: (c.commit.message || "Commit").split("\n")[0].replace(/[<>]/g, "").slice(0, 100),
                     url: c.html_url
                   });
                 }
@@ -111,13 +109,6 @@ jobs:
             publicRecent.sort((a, b) => new Date(b.date) - new Date(a.date));
             const publicCount = owned.filter(r => !r.private).length;
             const privateCount = owned.filter(r => r.private).length;
-            const metricRows = [
-              ["OWNED PROJECTS", owned.length, "Public + private repositories"],
-              ["AUTHORED COMMITS", totalCommits.toLocaleString("en-US"), "Default-branch history across accessible owned repositories"],
-              ["COMMITS · 30 DAYS", commits30d.toLocaleString("en-US"), "Authored commits in the last 30 days"],
-              ["ACTIVE REPOSITORIES", activeRepos30d, "Repositories with authored commits in the last 30 days"]
-            ];
-
             let recentHtml = "";
             if (publicRecent.length) {
               recentHtml = publicRecent.slice(0, 5).map(c =>
@@ -131,7 +122,7 @@ jobs:
               .sort((a, b) => new Date(b[1].latest) - new Date(a[1].latest))
               .slice(0, 4)
               .map(([category, data]) => `<tr><td>${category}</td><td>${data.count}</td><td>${iso(new Date(data.latest))}</td></tr>`)
-              .join("\\n") || '<tr><td colspan="3">No private-repository commits recorded in the last 30 days.</td></tr>';
+              .join("\n") || '<tr><td colspan="3">No private-repository commits recorded in the last 30 days.</td></tr>';
 
             const section = `<!-- PROFILE_METRICS_START -->
             <div align="center">
