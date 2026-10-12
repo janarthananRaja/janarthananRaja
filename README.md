@@ -95,10 +95,10 @@
 
 <table>
 <tr><th>Work area</th><th>Commits</th><th>Latest</th></tr>
-<tr><td>Frontend &amp; product UI</td><td>27</td><td>2026-10-06</td></tr>
-<tr><td>Backend &amp; API engineering</td><td>6</td><td>2026-10-01</td></tr>
-<tr><td>General product engineering</td><td>17</td><td>2026-10-01</td></tr>
-<tr><td>Quality, reliability &amp; delivery</td><td>19</td><td>2026-09-30</td></tr>
+<tr><td>Frontend &amp; product UI</td><td>59</td><td>2026-10-09</td></tr>
+<tr><td>General product engineering</td><td>51</td><td>2026-10-09</td></tr>
+<tr><td>Quality, reliability &amp; delivery</td><td>46</td><td>2026-10-09</td></tr>
+<tr><td>Backend &amp; API engineering</td><td>16</td><td>2026-10-08</td></tr>
 </table>
 
 <sub>Private activity is included in aggregate totals. Repository names and raw private commit messages are never published. Work areas are inferred from commit subjects and may be approximate.</sub>
