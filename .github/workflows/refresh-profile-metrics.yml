@@ -20,7 +20,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Calculate private-safe metrics and update profile
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         env:
           PROFILE_READ_TOKEN: ${{ secrets.PROFILE_READ_TOKEN }}
         with:
